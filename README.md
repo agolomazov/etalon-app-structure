@@ -1,11 +1,5 @@
 # **Данный проект является демонстрацией того, как реализуются Frontend-регламенты в коде.**
 
-# UI ЛК Арендатора Росимущества
-
-Репозиторий проекта: [Bitbucket Sbercloud](https://atlas.swec.sbercloud.ru/bitbucket/projects/ARLK/repos/arlk-tenant-ui/browse)  
-Репозиторий с версткой: [Gitlab](http://git.esphere.local/rilk/rilk-ui)  
-Вспомогательное приложение имитирующее главную страницу сайта РосИмущества: [Bitbucket Sbercloud](https://atlas.swec.sbercloud.ru/bitbucket/projects/ARLK/repos/arlk-rosim-ui-mock/browse)
-
 - [Описание](https://atlas.swec.sbercloud.ru/wiki/pages/viewpage.action?pageId=14100085)
 - [Технологии проекта](#Технологии-проекта)
 - [Кодстайл](#Кодстайл)
