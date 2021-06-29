@@ -427,9 +427,3 @@ cypress:open:ift      : запустить cypress для IFT стенда
 ```
 npm run cypress:open
 ```
-
-## Контакты
-
-- Антон Голомазов (Golomazov.AV@esphere.ru)
-- Алексей Смирнов (Smirnov.AA@esphere.ru)
-- Анатолий Шлом (Shlom.AM@esphere.ru)
