@@ -1,0 +1,435 @@
+@import '../../variables/themes/_nova.scss';
+
+// Variables------------------------------------------------------------------------------------------------------------
+$success: $secondary-02;
+$success-hover: $secondary-03;
+$success-active: $secondary-01;
+$success-light: #f2f8ff;
+$success-tag: #349c6a;
+
+// Controls-------------------------------------------------------------------------------------------------------------
+.button-wrapper {
+  &.success {
+    background-color: $success;
+    border-color: transparent;
+    &:hover {
+      background-color: $success-hover;
+    }
+    &:active {
+      background-color: $success-active;
+    }
+  }
+  &.blank.more:hover > i {
+    color: $black-03;
+  }
+}
+
+.search-input {
+  width: 29rem;
+  > * {
+    background-color: transparent;
+    border-color: transparent !important;
+  }
+
+  .tabs-container & {
+    width: 100%;
+  }
+}
+
+// Layout---------------------------------------------------------------------------------------------------------------
+.personal-box {
+  background-color: $success;
+  box-shadow: none;
+  padding: 0.6rem 0.8rem 0.6rem 3.2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  .logo {
+    color: $text-reverse;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    line-height: 2.1rem;
+    width: 20.8rem;
+  }
+  .search-input {
+    .input-element-wrapper {
+      i,
+      .input-element,
+      .input-element::placeholder {
+        color: $text-reverse;
+      }
+    }
+  }
+  .button-wrapper {
+    &,
+    i {
+      color: $text-reverse !important;
+    }
+    &:hover,
+    &:active {
+      background-color: transparent !important;
+    }
+    &.button-dropdown {
+      max-width: 29.2rem;
+      &:after {
+        right: 1.3rem;
+        top: calc(50% - 0.8rem);
+      }
+      &:focus {
+        padding-right: 4rem;
+      }
+    }
+  }
+}
+
+.sidebar {
+  background-color: $success-light;
+  margin-top: 6rem;
+  width: 24rem;
+  .aside-menu-list {
+    padding-top: 6.2rem;
+    > li {
+      padding: 0;
+      &:hover > a {
+        background-color: transparent;
+      }
+      > a {
+        margin-left: 0;
+        padding: 1.4rem 3.2rem;
+      }
+      &::after {
+        background: $success;
+      }
+    }
+    > li.active {
+      [class^="prodicon-"],
+      [class*=" prodicon-"] {
+        color: $success;
+      }
+
+      > a {
+        padding: 1.4rem 3.2rem;
+        }
+      }
+  }
+}
+
+.content-box {
+  margin-left: 24rem;
+  padding-top: 6rem;
+  .wrapper {
+    padding: 3.2rem 2.4rem;
+  }
+}
+
+.navigation-menu {
+  margin-bottom: 8rem;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+  .level-1 {
+    margin-left: 0.4rem;
+    margin-right: 1.6rem;
+    color: $black-03;
+    &.active {
+      color: $black-01;
+    }
+    > a {
+      padding: 0;
+      line-height: 2.6rem;
+    }
+  }
+}
+
+// Table
+.table {
+  .table-header {
+    background-color: transparent;
+    border-style: solid;
+    border-color: $black-06;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    font-size: 1.6rem;
+    color: #7A7A7C;
+    text-transform: uppercase;
+
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+
+    i {
+      color: $black-02;
+    }
+  }
+
+  td {
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+    .button.more:hover > i {
+      color: $black-03;
+    }
+  }
+
+  th,
+  td {
+    padding: 2.4rem 1.2rem;
+    .button-wrapper {
+      &:hover,
+      &:active {
+        i::before {
+          color: $black-03;
+        }
+      }
+    }
+
+    .checkbox-wrapper {
+      position: relative;
+      top: -.3rem;
+    }
+  }
+
+  tr:hover td {
+    background-color: $black-06;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+a.icon-add {
+  &:before {
+    color: $success;
+  }
+}
+
+.tag {
+  &.txt-gray {
+    color: $black-04;
+    &::before {
+      background-color: $black-04;
+    }
+  }
+  &.success::before {
+    background-color: $success-tag;
+  }
+}
+
+.large-padding-top {
+  padding-top: 6rem;
+}
+
+.max-width-90 {
+  max-width: 90%;
+}
+
+.txt-light-gray {
+  color: $black-04;
+}
+
+.checkbox-input:checked + .checkbox-label {
+  &::before,
+  &::after {
+    background-color: $success;
+    border-color: $success;
+  }
+
+  &:hover::before,
+  &:not(.semi):hover::after {
+    background-color: $success-hover;
+    border-color: $success-hover;
+  }
+}
+
+.checkbox-label:hover::before {
+  border-color: $success-hover;
+}
+
+.radio-button-input:checked + .radio-button-label {
+  &::before {
+    background-color: $success;
+    border-color: $success;
+  }
+
+  &:hover::before {
+    background-color: $success-hover;
+    border-color: $success-hover;
+  }
+}
+
+.radio-button-label:hover::before {
+  border-color: $success-hover;
+}
+
+// Registration page----------------------------------------------------------------------------------------------------
+.reg-page {
+  &-bg {
+    background-image: url('https://cdn.esphere.ru/images/hypotheses/kedo/bg-reg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-title {
+    h1 {
+      font-size: 9.6rem;
+      letter-spacing: 1rem;
+      line-height: 11.3rem;
+    }
+  }
+  &-row {
+    min-height: 100vh;
+    > * {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+  }
+  &-block {
+    .tabs-bar {
+      border-bottom: none;
+      display: inline-flex;
+      .tabs-item {
+        color: $black-03;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-left: 1rem;
+        margin-right: 3rem;
+        padding: 0.6rem 1.2rem;
+        &:hover::after {
+          background-color: transparent;
+        }
+        &.active {
+          color: $black-01;
+          &::after {
+            background-color: $success;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Requisites page------------------------------------------------------------------------------------------------------
+.requisites {
+  &-list {
+    > dt {
+      margin-right: 3.2rem;
+      padding-right: 1.6rem;
+      padding-top: 1.6rem;
+      text-align: right;
+    }
+    > dd {
+      padding-bottom: 1.6rem;
+      padding-top: 1.6rem;
+    }
+  }
+}
+
+.info-sidebar {
+  background-color: $black-07;
+  height: calc(100% - 6rem);
+  margin-right: -48.4rem;
+  margin-top: 6rem;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: 0.3s;
+  width: 47.4rem;
+  z-index: 0;
+  &.visible {
+    margin-right: 0;
+    transition: 0.3s;
+  }
+  &-footer {
+    background-color: $black-06;
+  }
+  .list {
+    > dd,
+    > dt {
+      padding-bottom: 1.2rem;
+      padding-top: 0.4rem;
+    }
+  }
+}
+
+.button-with-icon.small {
+  position: relative;
+  padding-left: 1.2rem;
+  &:hover i::before {
+    color: $white !important;
+  }
+  &:not(.blank):focus {
+    padding-left: 1.1rem
+  }
+}
+
+// Modal window----------------------------------------------------------------------------------------------------
+.info-modal {
+  .modal-window {
+    border-radius: 0;
+  }
+  .window-content {
+    border-radius: 0;
+    padding-top: 6.4rem;
+    padding-bottom: 7.6rem;
+  }
+  .modal-cross {
+    display: none;
+  }
+}
+
+// ProgressBar ----------------------------------------------------------------------------------------------------
+.progressbar-wrapper {
+  height: .4rem;
+}
+
+.progressbar-fill {
+  background: $success;
+}
+
+// notifications ----------------------------------------------------------------------------------------------------
+.notifications-wrapper {
+  width: auto;
+}
+
+.notifications-item {
+  background-color: $black-01;
+}
+
+.notifications-content {
+  width: auto;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  color: $white;
+}
+.notifications-icon-close {
+  display: none;
+}
+
+// Tabs
+.tabs-item {
+  &.active::after {
+    background-color: $success;
+  }
+  &:not(.active):not(.disabled):hover::after {
+    background-color: $success-hover;
+  }
+}
+
+// icons
+.icon-16 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.icon-24 {
+  font-size: 2.4rem;
+}

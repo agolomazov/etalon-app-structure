@@ -1,0 +1,76 @@
+/*
+	Flaticon icon font: Flaticon
+	Creation date: 24/01/2017 20:39
+	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+i[class*="flaticon-"],
+[class*="flaticon-"]:before,
+[class*="flaticon-"]:after {
+  font-family: Flaticon;
+  font-size:  125%;
+  /*font-size: 4rem;
+  line-height: 7rem;*/
+  line-height: inherit;
+  font-style: normal;
+  vertical-align: top;
+}
+
+i[class*="flaticon-"] {display: inline-block;}
+
+.flaticon-alarm-bell:before { content: "\f100"; }
+.flaticon-application:before { content: "\f101"; }
+.flaticon-chat:before { content: "\f102"; }
+.flaticon-coffee:before { content: "\f103"; }
+.flaticon-coins:before { content: "\f104"; }
+.flaticon-company:before { content: "\f105"; }
+.flaticon-home-alt:before { content: "\f106"; }
+.flaticon-hospital:before { content: "\f107"; }
+.flaticon-hospital-sign:before { content: "\f108"; }
+.flaticon-hospital-sign-1:before { content: "\f109"; }
+.flaticon-interface:before { content: "\f10a"; }
+.flaticon-map:before { content: "\f10b"; }
+.flaticon-med-ambulance:before { content: "\f10c"; }
+.flaticon-med-bottle:before { content: "\f10d"; }
+.flaticon-med-card:before { content: "\f10e"; }
+.flaticon-med-doctor:before { content: "\f10f"; }
+.flaticon-med-heart:before { content: "\f110"; }
+.flaticon-med-heart-full:before { content: "\f111"; }
+.flaticon-med-sign:before { content: "\f112"; }
+.flaticon-med-tool:before { content: "\f113"; }
+.flaticon-med-tool-alt:before { content: "\f114"; }
+.flaticon-menu:before { content: "\f115"; }
+.flaticon-point:before { content: "\f116"; }
+.flaticon-rich:before { content: "\f117"; }
+.flaticon-signs:before { content: "\f118"; }
+.flaticon-target:before { content: "\f119"; }
+.flaticon-target-point:before { content: "\f11a"; }
+.flaticon-video:before { content: "\f11b"; }
+.flaticon-video-alt:before { content: "\f11c"; }
+
+/*
+.flaticon-med-ambulance {margin: -.5rem 0;}
+.flaticon-med-ambulance,
+.flaticon-med-ambulance:after,
+.flaticon-med-ambulance:before {
+  line-height: 4rem;
+  font-size:   4rem;
+}
+*/

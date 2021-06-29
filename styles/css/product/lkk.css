@@ -1,0 +1,72 @@
+.auth .header, .widget .header .user-box {
+  display: none; }
+
+.courier {
+  background-image: url("../../images/lkk/bg-courier.png");
+  background-position: 110% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 22.5rem; }
+
+.hand {
+  background-image: url("../../images/lkk/hand.png");
+  background-position: 95% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 15rem; }
+
+.box-form .inner:hover {
+  background-color: lightyellow; }
+
+.box-form .inner:not(:hover) .hide {
+  visibility: hidden; }
+
+.info-dcb .message {
+  background-color: #fcf7cc;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #fecb00;
+  color: inherit;
+  padding: 1rem 2rem; }
+  .info-dcb .message a {
+    color: inherit; }
+  .info-dcb .message .button {
+    border-color: inherit; }
+
+.upload .k-upload {
+  margin-bottom: 2rem; }
+
+.upload .k-dropzone {
+  display: block; }
+  .upload .k-dropzone em {
+    display: block;
+    margin: 1rem 0; }
+
+.upload .k-button {
+  border-color: transparent;
+  color: #fff;
+  padding: .5rem 1.9rem;
+  margin-top: 1rem; }
+
+.sphere .upload .k-button {
+  background: steelblue; }
+
+.new .upload .k-button {
+  background: #2dba59; }
+
+.nova .upload .k-button {
+  background: #17bb4f;
+  border-radius: 2.4rem; }
+
+.dcb .upload .k-button {
+  background: #4ea31e; }
+
+.nova .header .menu-h li.level-1.active {
+  background: transparent;
+  color: #ff9900; }
+
+.bg-gray-05 {
+  background-color: #f2f4f7; }
+
+a > [class^="prodicon-"] {
+  color: inherit; }
+
+/*# sourceMappingURL=lkk.css.map */

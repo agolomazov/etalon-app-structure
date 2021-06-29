@@ -1,0 +1,12 @@
+.factoring.auth .header {
+  display: none; }
+
+.factoring.auth .content-box > * > .box {
+  background: transparent;
+  border: none;
+  padding: 0; }
+
+.factoring.auth > * > .wrapper {
+  background: transparent; }
+
+/*# sourceMappingURL=factoring.css.map */

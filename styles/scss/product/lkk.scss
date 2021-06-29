@@ -1,0 +1,110 @@
+@import "../variables/themes/_nova.scss";
+
+.auth .header, .widget .header .user-box {
+  display: none;
+}
+
+// Layouts
+
+.courier {
+  background-image: url('../../images/lkk/bg-courier.png');
+  background-position: 110% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 22.5rem;
+}
+
+.hand {
+  background-image: url('../../images/lkk/hand.png');
+  background-position: 95% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 15rem;
+}
+
+.box-form {
+  .inner {
+    &:hover {
+      background-color: lightyellow;
+    }
+
+    &:not(:hover) .hide {
+      visibility: hidden;
+    }
+  }
+}
+
+// Notification
+
+.info-dcb {
+  .message {
+    background-color: #fcf7cc;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #fecb00;
+    color: inherit;
+    padding: 1rem 2rem;
+
+    a {
+      color: inherit;
+    }
+
+    .button {
+      border-color: inherit;
+    }
+  }
+}
+
+
+// Dropzone
+
+.upload {
+  .k-upload {
+    margin-bottom: 2rem;
+  }
+
+  .k-dropzone {
+    display: block;
+
+    em {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+
+  .k-button {
+    border-color: transparent;
+    color: $text-reverse;
+    padding: .5rem 1.9rem;
+    margin-top: 1rem;
+  }
+}
+
+.sphere .upload .k-button {
+  background: steelblue;
+}
+
+.new .upload .k-button {
+  background: #2dba59;
+}
+
+.nova .upload .k-button {
+  background: #17bb4f;
+  border-radius: 2.4rem;
+}
+
+.dcb .upload .k-button {
+  background: #4ea31e;
+}
+
+// Перекрашиваем активный пункт меню в nova
+.nova .header .menu-h li.level-1.active {
+  background: transparent;
+  color: $accent-02;
+}
+
+.bg-gray-05 {
+  background-color: $black-07;
+}
+
+a > [class^="prodicon-"] {
+  color: inherit;
+}

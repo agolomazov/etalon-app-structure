@@ -1,0 +1,17 @@
+.factoring {
+  &.auth {
+    .header {
+      display: none;
+    }
+
+    .content-box > * > .box {
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    > * > .wrapper {
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,240 @@
+@import "../variables/themes/_nova.scss";
+
+body.aside {
+  .head-service, .head-service > div {
+    max-width: initial;
+    &.aside-open {
+      padding-left: 53.2rem;
+      transition: .3s ease;
+    }
+  }
+  .wrapper {
+    &.aside-open {
+      padding-left: 50.6rem;
+      transition: .3s ease;
+    }
+  }
+}
+
+.head-service > div {
+  max-width: 140rem;
+  margin: auto;
+}
+
+.user-box {
+  z-index: 999;
+  background: $white;
+  position: fixed;
+  width: 100%;
+  li.dropdown {
+    padding-right: 2.5rem;
+    &:after {
+      content: '\e908';
+      display: inline-block;
+      font-family: 'uicons';
+      font-size: 1.4rem;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -1rem;
+    }
+  }
+}
+
+.client-avatar {
+  display: inline-block;
+  padding: 1rem;
+  background: $black-07;
+  border-radius: 50%;
+}
+
+.logo {
+  display: inline-block;
+  width: 14rem;
+  height: 3.4rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: url(../../images/sb/logo-green.png) no-repeat 0 50%;
+  padding-left: 3.2rem;
+}
+
+.button.shadow {
+  box-shadow: $shadow;
+  border-color: $black-06;
+}
+
+.sidebar {
+  ul > li > a {
+    position: relative;
+    padding: 1.2rem .6rem 1.2rem 6rem;
+    > .count {
+      position: absolute;
+      padding: .2rem 0.4rem .1rem;
+      right: 1rem;
+      top: 50%;
+      margin-top: -1rem;
+      &:empty {
+        right: 2rem;
+        transform: none;
+        min-width: 0.8rem;
+        width: 0.8rem;
+        height: 0.8rem;
+        background-color: #ff890c;
+        border-radius: 50%;
+        margin-top: -.4rem;
+      }
+    }
+  }
+  ul li {
+    padding: 0;
+    white-space: normal;
+    &.active {
+      font-weight: 500;
+      &::after {
+        height: 77%;
+        top: 10%;
+      }
+    }
+  }
+  nav {
+    padding-top: 8rem;
+    height: calc(100% - 8rem);
+  }
+  .main-aside {
+    width: 25rem;
+    position: relative;
+    z-index: 100;
+    box-shadow: $shadow;
+  }
+  .sub-aside {
+    width: 25rem;
+    padding-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: $black-08;
+    z-index: 90;
+    ul {
+      margin-left: -1rem;
+    }
+    ul li a {
+      padding: 1rem 3rem 1rem 2rem;
+      color: $black-03;
+    }
+  }
+  &.open {
+    width: 51rem;
+    .sub-aside {
+      left: 25rem;
+      opacity: 1;
+      transition: .3s ease;
+    }
+  }
+}
+
+.head-service {
+  padding-bottom: 0;
+  padding-top: 10rem;
+  &.title {
+    margin-bottom: 0;
+  }
+}
+
+.icon-big {
+  font-size: 3rem;
+}
+
+.txt-lightgray {
+  color: $black-04;
+}
+
+.wizard-window {
+  border-radius: 2.4rem 2.4rem 0 0;
+  .wizard-content {
+    background: $brand-primary;
+  }
+  .chunkbar {
+    display: flex;
+    .bar {
+      display: inline-flex;
+      background: $primary-04;
+      height: .6rem;
+      border-radius: .6rem;
+      border: 0!important;
+      width: 96%;
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.success {
+        background: $white;
+      }
+    }
+  }
+  .inner.first {
+    padding-left: 9.6rem;
+  }
+  .list-check > li{
+    padding-bottom: 1.2rem;
+    &:before {
+      color: $white;
+    }
+  }
+}
+
+.k-window-titleless {
+  .k-window-actions {
+    display: none;
+  }
+}
+
+.back-link {
+  position: relative;
+  margin-left: -4rem;
+  margin-top: .5rem;
+}
+
+.panel.doc {
+  .title {
+    padding: 1.6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .inner.first {
+      padding-left: 4rem;
+      .i-label {
+        left: 0;
+      }
+    }
+  }
+  .content-cell {
+    padding: 1.6rem 2rem;
+  }
+  dl label {
+    color: $gray-dark;
+  }
+}
+
+.invoice-grid {
+  th {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 1.2rem .4rem;
+  }
+
+  td {
+    padding: .8rem .4rem;
+  }
+
+  .button.more {
+    padding: .5rem;
+  }
+
+  tfoot {
+    td {
+      padding: .3rem .4rem;
+      border-bottom: 1px solid $black-05;
+    }
+  }
+}

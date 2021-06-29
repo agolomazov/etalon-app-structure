@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id="compare" viewBox="0 0 512 512">
+    <rect x="71.1" y="146.2" fill="none" stroke="#949494" stroke-width="22.1007" stroke-miterlimit="10" width="294.7" height="294.7"/>
+    <polyline fill="none" stroke="#949494" stroke-width="22.1007" stroke-miterlimit="10" points="385.7,365.8 440.9,365.8 440.9,71.1 146.2,71.1 146.2,126.3 "/>
+  </symbol>
+  <symbol id="compare-checked" viewBox="0 0 512 512">
+    <rect x="71.1" y="146.2" fill="#f49530" stroke="#f49530" stroke-width="22.1007" stroke-miterlimit="10" width="294.7" height="294.7"/>
+    <polyline fill="none" stroke="#f49530" stroke-width="22.1007" stroke-miterlimit="10" points="385.7,365.8 440.9,365.8 440.9,71.1 146.2,71.1 146.2,126.3 "/>
+  </symbol>
+  <symbol id="compare-link" viewBox="0 0 512 512">
+    <rect x="71.1" y="146.2" fill="none" stroke="#ffffff" stroke-width="22.1007" stroke-miterlimit="10" width="294.7" height="294.7"/>
+    <polyline fill="none" stroke="#ffffff" stroke-width="22.1007" stroke-miterlimit="10" points="385.7,365.8 440.9,365.8 440.9,71.1 146.2,71.1 146.2,126.3 "/>
+  </symbol>
+</svg>

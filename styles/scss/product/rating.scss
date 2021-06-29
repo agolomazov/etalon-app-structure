@@ -1,0 +1,206 @@
+@import "../variables/_base.scss";
+@import "../variables/themes/_nova.scss";
+@import "./scanner.scss";
+
+.rating {
+
+  &:not(.admin) .wrapper {
+    padding-top: 1rem;
+    background: $black-07;
+  }
+
+  .header {
+    margin: 1rem 1rem 1.6rem;
+  }
+
+  &.tariff .header {
+    margin: 0;
+  }
+
+  .wrapper-base {
+    padding: 1.4rem 1.6rem 1.4rem;
+  }
+
+  .new-area {
+    border-left: .3rem solid $accent-02;
+  }
+
+  .wrapper-base-small {
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .cards {
+    margin-left: .9rem;
+    margin-right: .9rem;
+    border: 1px solid $gray;
+    border-radius: .3rem;
+    background-color: $body-bg;
+    position: relative;
+
+    &-inner {
+      margin: 0 .5rem;
+
+      .wrapper-base {
+        padding: 1.8rem 1.6rem;
+      }
+
+      &.success {
+        border-color: $brand-primary;
+      }
+
+      &.danger {
+        border-color: $brand-danger;
+      }
+    }
+
+    &-border-none {
+      border-color: transparent;
+    }
+  }
+
+  .chart-wrapper {
+    position: relative;
+  }
+
+  .modal-height-36 {
+    max-height: 36rem;
+    overflow-y: auto;
+  }
+}
+
+.border-success .k-upload {
+  border-color: $brand-primary;
+}
+
+.border-danger .k-upload {
+  border-color: $brand-danger;
+}
+
+/* layout
+----------------------------------------------------------------------------- */
+
+.shadow {
+  box-shadow: $shadow;
+}
+
+.quick-view-tbody {
+  + tbody tr > td {
+    background-color: inherit;
+    padding: 1rem;
+  }
+  &.quick-view-tbody-selected {
+    > tr > td:first-child, + tbody > tr > td:first-child {
+      border-left-width: 0;
+    }
+    > tr > td > a > i.uicon-expand {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+/* icon
+----------------------------------------------------------------------------- */
+
+.icon-2rem, .icon-2-rem {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-3rem, .icon-3-rem {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* sub-menu
+----------------------------------------------------------------------------- */
+
+.header .menu-h {
+  background: $black-06;
+  border-radius: $btn-big-radius;
+  padding: 2px;
+  li.level-1 {
+    margin-bottom: 0;
+    border-radius: $btn-big-radius;
+    transition:all .1s linear;
+    > a, > span, > div {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      text-align: center;
+    }
+    &.active {
+      background: $black-03;
+      color: $text-reverse;
+    }
+    &:last-child a.i-count {
+      padding-right: .6rem;
+    }
+    &:hover:not(.active) {
+      background: $black-05;
+    }
+  }
+  .i-sup {
+    overflow: visible;
+    .count.sup {
+      top: -1rem;
+    }
+  }
+}
+
+.header .menu-h li.dropdown {
+  &.active {
+    background: transparent;
+    color: $accent-02;
+  }
+  .wrapper-base {
+    padding: 1.4rem 1.6rem 1.4rem;
+  }
+
+  .wrapper-base-small {
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .cards {
+    margin-left: .9rem;
+    margin-right: .9rem;
+    border: 1px solid $gray;
+    border-radius: .3rem;
+    background-color: $body-bg;
+    position: relative;
+
+    &-inner {
+      margin: 0 .5rem;
+
+      .wrapper-base {
+        padding: 1.8rem 1.6rem;
+      }
+
+      &.success {
+        border-color: $brand-primary;
+      }
+
+      &.danger {
+        border-color: $brand-danger;
+      }
+    }
+
+    &-border-none {
+      border-color: transparent;
+    }
+  }
+
+  .chart-wrapper {
+    position: relative;
+  }
+}
+
+.k-tabstrip > .k-tabstrip-items {
+  background-color: transparent;
+  .k-item {
+    .k-link {
+      padding: .8rem;
+    }
+    margin-right: 2rem;
+  }
+}

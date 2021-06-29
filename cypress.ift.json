@@ -1,0 +1,6 @@
+{
+  "extends": "./cypress.json",
+  "env": {
+    "mode": "IFT"
+  }
+}

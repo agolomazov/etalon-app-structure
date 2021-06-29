@@ -1,0 +1,32 @@
+/* modal */
+@media screen and (max-width: 1023.98px) {
+  .modal-window {
+    .modal-cross {
+      background-image: url('https://cdn.esphere.ru/images/svg/close-black.svg') !important;
+      background-size: 20px 20px !important;
+      width: 25px;
+      height: 25px;
+      right: 52px;
+      top: 20px;
+    }
+    .modal-header {
+      padding-right: 62px;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .modal-window {
+    .modal-cross {
+      right: 40px;
+      top: 16px;
+    }
+    .modal-header {
+      padding: 16px 48px 16px 16px;
+      line-height: 24px;
+    }
+    .modal-body, .modal-footer {
+      padding: 16px;
+    }
+  }
+}

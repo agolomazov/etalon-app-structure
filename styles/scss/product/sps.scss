@@ -1,0 +1,658 @@
+@import "../variables/themes/_nova.scss";
+
+$main-bg: #0F1F46;
+$main-dark: #0B193B;
+$main-light: #132657;
+$main-lighter: #213158;
+
+$success-dark: #0F8577;
+$success: #019773;
+$success-hover: #29BBA1;
+$success-light: #82F2D1;
+
+$info: #1358BF;
+
+$warning: #FF890C;
+
+$loader-element-size: 6rem;
+
+// страница авторизации
+.auth {
+  background: $main-bg;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  .wrapper {
+    min-width: auto;
+  }
+
+  .form-block {
+    width: 40rem;
+    color: $text-reverse;
+    margin: 3.2rem auto;
+
+    .form {
+      min-height: 34rem;
+
+      label {
+        display: inline-block;
+        margin-bottom: .4rem;
+      }
+    }
+
+    .box {
+      border-radius: 1.5rem;
+      color: $text-color;
+      padding: 1.6rem;
+      margin-bottom: 1.6rem;
+
+      &.select-cert {
+        min-height: 27rem;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  a {
+    color: #4a8cce;
+
+    &:hover {
+      color: #69aef3;
+    }
+  }
+
+  .invalid-message-item {
+    color: #e05d4f;
+  }
+
+  .button-group-buttons-wrapper {
+    background: $main-dark;
+    border-radius: 2.4rem;
+    padding: .2rem;
+
+    .button-wrapper, .button-wrapper:hover {
+      background: transparent;
+      border-radius: 2.4rem;
+      border: none;
+      flex-grow: 1;
+      padding-top: .8rem;
+      padding-bottom: .8rem;
+
+      &.active {
+        background: $main-light;
+      }
+    }
+  }
+
+  .button-wrapper:not(.success) {
+    background: transparent;
+    &:hover {
+      border-color: $black-03 !important;
+    }
+  }
+
+  hr {
+    border-color: $main-dark;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .list-pass-hint {
+    background-color: $main-dark;
+    border-radius: .6rem;
+    padding: 1.2rem 1.2rem 1.2rem 3.2rem;
+  }
+
+  .notifications-top {
+    top: 2.8rem;
+  }
+}
+// end страница авторизации
+
+.select-cert {
+  .table {
+    max-height: 19.4rem;
+    overflow-y: auto;
+  }
+}
+
+a:hover, .button-wrapper.blank:hover {
+  color: $secondary-03;
+}
+
+.max-height-error {
+  max-height: 64rem;
+  overflow: auto;
+}
+
+.list {
+  &.form {
+    > dd, > dt {
+      padding-bottom: .7rem;
+      padding-top: .7rem;
+    }
+  }
+
+  dt .subtitle {
+    line-height: 1.4rem;
+  }
+}
+
+.list-large {
+  > dt, > dd {
+    padding-bottom: .4rem;
+    padding-top: .4rem;
+  }
+
+  .inner.secondary {
+    margin-bottom: .4rem;
+  }
+}
+
+.list-tree li li {
+  padding-bottom: .8rem;
+}
+
+.user-box {
+  background: $main-bg;
+  border-bottom: none;
+  color: $text-reverse;
+  min-height: 6rem;
+  min-width: 102rem;
+  padding: .6rem 4rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  .logo {
+    height: 4rem;
+  }
+
+  .profile-block {
+    line-height: 1.3rem;
+    margin-right: 3rem;
+  }
+
+  .dropdown-wrapper > ul {
+    margin-top: 1.2rem;
+  }
+
+  .menu-h > li > {
+    a, .dropdown-wrapper {
+      padding: 1.2rem;
+
+      &:hover:not(.button):not(.active):not(.clear),
+      &.opened {
+        background-color: $main-lighter;
+        border-radius: 1.6rem;
+      }
+    }
+  }
+
+  a:not(.link), [class^="prodicon-"] {
+    color: $text-reverse;
+  }
+
+  .hamburger {
+    height: 3.2rem;
+    margin: .4rem 0 0;
+    width: 3.2rem !important;
+    .bar {
+      left: .4rem;
+      width: 2.4rem;
+      &-1 {
+        top: .4rem;
+      }
+      &-2 {
+        top: 1rem;
+      }
+      &-4 {
+        top: 1.6rem;
+      }
+    }
+    &-text {
+      bottom: 2px;
+      font-size: 1rem;
+      left: 3px;
+      line-height: 1rem;
+      position: absolute;
+      text-transform: lowercase;
+      transition-duration: .3s;
+    }
+    &.open {
+      .bar-1 {
+        top: 1.4rem;
+        transform: rotate(45deg);
+      }
+      .bar-2 {
+        top: 1.4rem;
+        transform: rotate(-45deg);
+      }
+      .bar-4,
+      .hamburger-text {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.wrapper {
+  max-width: 123rem;
+  padding: 0 3rem;
+  min-width: 102rem;
+}
+
+.title-block {
+  background: $black-07;
+  border-bottom: 1px solid $black-06;
+  height: 12.8rem;
+
+  .title {
+    align-items: center;
+    border: 0;
+    display: flex;
+    height: 12.8rem;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 1.2rem;
+    position: relative;
+  }
+
+  .backward-link {
+    font-size: 2.4rem;
+    left: -3.6rem;
+    position: absolute;
+    top: calc(50% - 1.2rem);
+  }
+
+  .tabs-wrapper {
+    margin-top: -3.2rem;
+  }
+
+  &-admin {
+    height: auto;
+    padding-top: .8rem;
+    padding-bottom: .4rem;
+
+    .title {
+      padding-top: .8rem;
+    }
+
+    .backward-link {
+      position: static;
+    }
+
+    &.large-height {
+      height: 12.8rem;
+    }
+  }
+}
+
+.secondary {
+  background-color: $black-07 !important;
+  border-radius: .6rem;
+  padding: .8rem 1.2rem;
+}
+
+.sender-block {
+  .table-layout > * {
+    > * {
+      padding: 1.2rem 0;
+      &:first-child {
+        padding-right: 1.2rem;
+      }
+    }
+  }
+}
+
+.error-block {
+  margin-top: 15rem;
+}
+
+h5 {
+  padding: .4rem 0;
+}
+
+.size-normal {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+[class^="novicon-"], [class*=" novicon-"] {
+  &.txt-gray {
+    color: $black-04 !important;
+  }
+}
+
+
+.count {
+  min-width: 1.6rem;
+  line-height: 1.6rem;
+  background-color: $main-bg;
+  color: $text-reverse;
+}
+
+.info {
+  &.count,
+  &.tag::before {
+    background-color: $info;
+  }
+}
+
+.warning {
+  &.count,
+  &.tag::before {
+    background-color: $warning;
+  }
+}
+
+.tags-item {
+  > span:not(.tags-icon) {
+    max-width: 35rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.subtitle {
+  .tag:before {
+    margin-top: .5rem;
+  }
+}
+
+.tabs-item {
+  padding: .4rem 1.6rem .7rem;
+  &.active::after {
+    background-color: $main-bg;
+  }
+  &:not(.active):not(.disabled):hover {
+    color: $black-03;
+    &::after {
+      background-color: transparent;
+    }
+  }
+}
+
+.progressbar {
+  &-wrapper {
+    height: .2rem;
+    background: transparent;
+  }
+  &-fill {
+    background: $success;
+  }
+}
+
+.invalid-message-list {
+  white-space: nowrap;
+}
+
+.form-block .invalid-message-list {
+  white-space: normal;
+}
+
+.panel-color {
+  background-color: $black-07;
+  border-radius: .6rem;
+  .secondary {
+    background-color: $black-06 !important;
+  }
+}
+
+.table {
+  th.table-header {
+    background-color: transparent;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    color: $black-03;
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+  }
+  &-header,
+  td,
+  &-footer {
+    border-color: $border;
+  }
+}
+
+.table tbody tr.selected {
+  background-color: $black-07;
+}
+
+.table-request {
+  tbody tr:hover {
+    background-color: unset;
+
+    td:not(:last-child) {
+      background-color: $black-07;
+    }
+  }
+
+  td {
+    &:nth-last-child(2) {
+      border-top-right-radius: .6rem;
+      border-bottom-right-radius: .6rem;
+    }
+
+    &:hover {
+      .novicon-info-circle {
+        color: $black-03 !important;
+      }
+    }
+  }
+}
+
+.admin-layout {
+  display: flex;
+  min-height: calc(100vh - 6rem);
+
+  .sidebar {
+    height: auto;
+    margin-left: 0;
+    min-height: inherit;
+    padding-top: 6rem;
+    top: 0;
+    width: 22.4rem;
+    z-index: 1;
+  }
+
+  .title-block {
+    .backward-link {
+      left: 1.4rem;
+      & + * {
+        margin-left: 4.8rem;
+      }
+    }
+  }
+
+  .content-box {
+    width: 100%;
+    padding-left: 22.4rem;
+
+    .wrapper {
+      padding: 0 1.4rem;
+      max-width: 121.8rem;
+      margin: 0;
+      min-width: 77.6rem;
+    }
+  }
+
+  .footer {
+    width: calc(100% - 22.4rem);
+  }
+
+}
+
+.sidebar {
+  margin-left: -22.4rem;
+  padding: 0;
+  top: 6rem;
+  transition: margin-left .3s;
+  z-index: 2;
+  &.visible {
+    margin-left: 0;
+  }
+  ul > li {
+    &.active::after {
+      background-color: $main-bg;
+    }
+
+    &.active, &:hover {
+      > a svg {
+        fill: $main-bg;
+      }
+    }
+
+    > a {
+      transition: none;
+
+      svg {
+        fill: #BBC1C5;
+      }
+    }
+  }
+}
+
+.success {
+  &.button-wrapper,
+  &.tag::before,
+  &.count, {
+    background-color: $success;
+  }
+
+  &.button-wrapper {
+    border-color: transparent;
+    &:hover {
+      background-color: $success-hover;
+      border-color: transparent;
+      background-image: none;
+    }
+    &.disabled, &.disabled:hover {
+      background-color: $success-light !important;
+      border-color: transparent;
+    }
+    &:active,
+    &:focus {
+      background-color: $success-dark;
+    }
+  }
+}
+
+.radio-button {
+  &-input:checked + .radio-button-label {
+    &::before {
+      background-color: $success;
+      border-color: $success;
+    }
+
+    &:hover::before {
+      background-color: $success-dark;
+      border-color: $success-dark;
+    }
+  }
+
+  &-label:hover::before {
+    border-color: $success-dark;
+  }
+}
+
+.checkbox-input:checked + .checkbox-label::before,
+.checkbox-input:checked + .checkbox-label::after,
+.checkbox-input:checked + .checkbox-label:hover::before,
+.checkbox-input:checked + .checkbox-label:not(.semi):hover::after, {
+  background-color: $success;
+  border-color: $success-dark;
+}
+
+.checkbox-label:hover::before {
+  border-color: $success-dark;
+}
+
+.txt-success {
+  color: $success !important;
+}
+
+.tabs-item:not(.active):hover {
+  border-bottom-color: transparent;
+}
+
+.content-box {
+  padding-bottom: 16rem;
+  padding-top: 6rem;
+  min-width: 102rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $body-bg;
+  box-shadow: $shadow-level-2-top;
+  z-index: 1;
+}
+
+
+// небольшой кастом дропзоны, чтобы иконки были меньше
+
+.filedrop-wrapper {
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+
+  .filedrop-not-ok-icon {
+    background-image: url("https://cdn.esphere.ru/images/notifications/not-ok.svg");
+    width: 4rem;
+    height: 4rem;
+  }
+  .filedrop-ok-icon {
+    background-image: url("https://cdn.esphere.ru/images/notifications/ok.svg");
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .filedrop-progress-loader .progress-circle {
+    stroke: $success;
+  }
+}
+
+.dropdown-wrapper.opened {
+  z-index: 1;
+
+  .novicon-expand {
+    transition-duration: .2s;
+    transform: rotate(180deg);
+  }
+}
+
+.scroll-data {
+  max-height: 40rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+
+@media screen and (max-width: 1020px) {
+  .admin-layout {
+    min-width: 100rem;
+
+    .content-box {
+      padding-bottom: 0;
+    }
+  }
+
+  .footer {
+    position: static;
+    width: 100% !important;
+    box-shadow: none;
+    border-top: 1px solid $black-06;
+  }
+}

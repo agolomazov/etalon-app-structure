@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@support/*": ["./cypress/support/*"],
+      "@common/*": ["./src/common/*"],
+      "@features/*": ["./src/features/*"],
+      "@processes/*": ["./src/processes/*"],
+      "@styles/*": ["./src/common/styles/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@store/*": ["./src/store/*"],
+      "@src/*": ["./src/*"],
+      "@packageSrc": ["./package.json"],
+      "@mockups/*": ["./src/mockups/*"],
+      "@mockups-pages/*": ["./src/mockups/pages/*"],
+      "@mockups-components/*": ["./src/mockups/components/*"],
+      "@mockups-layouts/*": ["./src/mockups/layouts/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

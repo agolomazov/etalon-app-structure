@@ -1,0 +1,7 @@
+{
+  "extends": "./cypress.json",
+  "baseUrl": "http://45.89.226.2:41048/ros/",
+  "env": {
+    "mode": "DEV"
+  }
+}

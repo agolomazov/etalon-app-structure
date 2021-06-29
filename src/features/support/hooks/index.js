@@ -1,0 +1,1 @@
+export { useTechSupportMessage } from './useTechSupportMessage';

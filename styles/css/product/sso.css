@@ -1,0 +1,157 @@
+.login.sphere {
+  background: #fff url(https://cdn.esphere.ru/images/bg-cloud.png) 50% 0 no-repeat;
+  background-size: 100%; }
+
+.login .banner {
+  background: url(../../images/scanner/spk-bg-8.jpg) 50% 50% no-repeat;
+  background-size: 150%;
+  padding: 2rem 0;
+  border-radius: .3rem;
+  transition: 800ms; }
+  .login .banner:hover {
+    background-size: 160%; }
+
+.login .wrapper {
+  max-width: 100rem; }
+
+.login .content-box {
+  background-repeat: no-repeat;
+  padding: 5% 0; }
+
+.login .box {
+  border-color: #e2f0fb; }
+
+.login .textbox {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #000;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 2rem;
+  height: 4rem;
+  text-indent: .9rem;
+  padding: .9rem 0;
+  position: relative;
+  outline: 0;
+  overflow: visible;
+  vertical-align: middle;
+  -webkit-appearance: none; }
+
+.login .avatar {
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  margin: 1rem auto;
+  height: 12.8rem;
+  width: 12.8rem; }
+
+.banner {
+  color: #fff; }
+  .banner .allert {
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    border: 0.5rem solid #000;
+    margin: auto;
+    width: 70%; }
+  .banner .text,
+  .banner .note,
+  .banner .title {
+    text-shadow: 0 1px 2px #000; }
+  .banner h3 {
+    font-size: 2.4rem; }
+  .banner .title {
+    border: none;
+    margin: 0 0 1rem; }
+  .banner .text {
+    padding: 2rem 0; }
+  .banner .note {
+    padding: 1rem 0 0;
+    opacity: .7; }
+
+.reg {
+  background: #fff url(https://cdn.esphere.ru/images/bg-cloud.png) 50% 0 no-repeat;
+  background-size: 100%; }
+  .reg .content-box {
+    padding-top: 5rem; }
+  .reg header {
+    padding-bottom: 3rem;
+    color: #09526d; }
+    .reg header .k-grid {
+      color: #09526d;
+      border-color: transparent; }
+      .reg header .k-grid td {
+        border-color: #fff; }
+    .reg header .button {
+      background: transparent;
+      color: inherit;
+      border-color: inherit; }
+      .reg header .button:hover {
+        background: #fff; }
+  .reg .wrapper {
+    max-width: 65rem;
+    min-width: 0; }
+  .reg .box {
+    box-shadow: 0 -1.5rem 2rem #e2f0fb;
+    border-color: #e2f0fb #e2f0fb transparent;
+    min-height: 40rem; }
+  .reg.bill .box, .reg.manager .box {
+    padding: 3rem 6rem; }
+  .reg.bill .k-grid, .reg.manager .k-grid {
+    margin: 1rem 0; }
+
+body.error h1 {
+  font-size: 8em;
+  line-height: 100%; }
+
+.error-box {
+  position: relative;
+  margin-top: 4rem;
+  box-shadow: 0.7rem 0.7rem 0 rgba(0, 0, 0, 0.1); }
+  .error-box .box {
+    padding: 4rem 3rem 6rem; }
+  .error-box .button-box {
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+    right: 0; }
+
+* html ul li {
+  zoom: 1; }
+
+body.browsers .box.blank {
+  box-shadow: none; }
+
+/* Browser Icons */
+.i-browser {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  background-image: url(https://cdn.esphere.ru/images/browser_sprite.png); }
+
+.i-chrome {
+  background-position: -265px 0; }
+
+.i-ff {
+  background-position: -67px  0; }
+
+.i-ie {
+  background-position: -134px 0; }
+
+.i-ya {
+  background-position: 0   0; }
+
+.i-edge {
+  background-position: -199px 0; }
+
+.i-safari {
+  background-position: -402px 0; }
+
+.i-opera {
+  background-position: -333px 0; }
+
+/*# sourceMappingURL=sso.css.map */

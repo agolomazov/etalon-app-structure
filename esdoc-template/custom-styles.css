@@ -1,0 +1,21 @@
+.search-result li.search-separator {
+  padding: 3px 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+header > a:first-child > img {
+  width: 180px !important;
+  height: 31px !important;
+}
+
+header > a:first-child > img {
+  background-color: #fff;
+  padding: 0 15px;
+  border-radius: 15px !important;
+}
+
+footer img {
+  margin: 0 0 0 20px;
+  width: 120px;
+}

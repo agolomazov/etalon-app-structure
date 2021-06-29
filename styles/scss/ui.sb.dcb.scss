@@ -1,0 +1,192 @@
+.auth {
+  .header {
+    display: none;
+  }
+  .content-box {
+    > * {
+      > .box {
+        background: transparent;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+  > * {
+    > .wrapper {
+      background: transparent;
+    }
+  }
+}
+
+/* reset.css
+----------------------------------------------------------------------------- reset.css */
+a,
+a > .link,
+.link[href],
+.alt {
+  border-width: 0;
+}
+
+/* nav.css
+----------------------------------------------------------------------------- nav.css */
+.menu-v {
+  [class*="level-"] {
+    &.active {
+      > a {
+        border-color: #f49530;
+      }
+    }
+  }
+}
+
+.nav-box {
+  background: #4ea31e;
+  margin-bottom: 2rem;
+  border-radius: .3rem;
+  padding: .5rem;
+  .level-1 {
+    border-radius: .3rem;
+    margin-right: .5rem;
+    > a,
+    > span {
+      color: #fff;
+    }
+    &.active {
+      background: #fff;
+      > a,
+      > span {
+        color: #000;
+      }
+      .i-logo {
+        background-image: url(../images-2x/sb/icons-40.png);
+        background-position: -2rem center;
+        background-size: 4rem;
+      }
+    }
+  }
+}
+
+.menu-box {
+  nav {
+    padding: 0 .5rem;
+    .level-1 {
+      > a,
+      > span {
+        box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);
+        padding: .5rem 1.5rem;
+        margin: .5rem 0;
+      }
+      &:first-child {
+        > a,
+        > span {
+          box-shadow: none;
+        }
+      }
+    }
+    li:hover > a,
+    .active > a,
+    .active > span {
+      color: #f49530;
+    }
+  }
+}
+
+.dropdown {
+  > ul {
+    border-radius: 0;
+    border: 1px solid #f5f5f5;
+    box-shadow: none;
+    li:first-child {
+      > a, > span, > div {
+        border-radius: 0;
+      }
+    }
+  }
+  .level-2 {
+    border-top: 0;
+  }
+}
+
+.panel {
+  .title, .content {
+    border-radius: 0;
+  }
+  &:not(.active) .title{
+    border-radius: 0;
+  }
+}
+
+
+/* controls.css
+----------------------------------------------------------------------------- controls.css */
+a.button, .button, button, button.button {
+  border-radius: 3px;
+
+  &.more {
+    padding: .5rem 1.5rem;
+
+    &.small {
+      padding: .3rem 1.1rem;
+    }
+  }
+}
+
+.tags {
+  .tag {
+    border-radius: 4px;
+    border: 1px solid #f5f5f5;
+    background-color: #fafafa;
+    [class*="icon"] {
+      color: #000000;
+    }
+  }
+}
+
+  /* popup.css
+  ----------------------------------------------------------------------------- popup.css */
+.window-content {
+  padding: 2rem 2.4rem;
+}
+
+body:not(.alpha) .k-window-content .ending, body:not(.black) .k-window-content .ending {
+  padding: 2.4rem;
+}
+
+/* Notices
+----------------------------------------------------------------------------- */
+
+.snackbar {
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.snackbar-icon,
+.snackbar-close {
+  padding: 0 1.4rem 0 0.7rem;
+}
+
+.snackbar-icon {
+  border-right-width: 2px;
+}
+
+/* Loader
+----------------------------------------------------------------------------- */
+.common-loader {
+  background: #4ea31e;
+  background: linear-gradient(200deg, rgba(#4ea31e,1) 0%, rgba(#fff,0) 100%);
+  &:before {
+    content: "";
+    background: linear-gradient(180deg, rgba(#fff,0) 0%, rgba(#4ea31e,1) 100%);
+  }
+  &::after {
+    background: #fff;
+  }
+}
+
+.message .button {
+  background: transparent;
+  border-color: inherit;
+  &:hover {
+    border-color: inherit;
+  }
+}

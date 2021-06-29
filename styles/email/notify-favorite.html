@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta content="text/html charset=UTF-8" http-equiv="Content-Type">
+	<meta content="width=device-width" name="viewport">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="x-apple-disable-message-reformatting">
+	<title></title><!--[if mso]>
+      <style>
+        * {
+          font-family: sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+	<!--[if !mso]><!-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<!-- CSS Reset : BEGIN -->
+
+	<style>
+	     html,
+	     body {
+	       margin: 0 auto !important;
+	       padding: 0 !important;
+	       height: 100% !important;
+	       width: 100% !important;
+	     }
+
+	     * {
+	       -ms-text-size-adjust: 100%;
+	       -webkit-text-size-adjust: 100%;
+	     }
+
+	     div[style*="margin: 16px 0"] {
+	       margin: 0 !important;
+	     }
+
+	     table,
+	     td {
+	       mso-table-lspace: 0pt !important;
+	       mso-table-rspace: 0pt !important;
+	     }
+
+	     table {
+	       border-spacing: 0 !important;
+	       border-collapse: collapse !important;
+	       table-layout: fixed !important;
+	       margin: 0 auto !important;
+	     }
+
+	     table table table {
+	       table-layout: auto;
+	     }
+
+	     img {
+	       -ms-interpolation-mode: bicubic;
+	     }
+
+	     *[x-apple-data-detectors],
+	     .x-gmail-data-detectors,
+	     .x-gmail-data-detectors * {
+	       border-bottom: 0 !important;
+	       cursor: default !important;
+	       color: inherit !important;
+	       text-decoration: none !important;
+	       font-size: inherit !important;
+	       font-family: inherit !important;
+	       font-weight: inherit !important;
+	       line-height: inherit !important;
+	     }
+
+	     @media only screen and (max-width: 640px) {
+	       table {
+	         width: 100% !important;
+	       }
+	     }
+	</style><!-- CSS Reset : END -->
+	<!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+</head>
+<body style="margin: 0; mso-line-height-rule: exactly; background: #F4F8FC;">
+	<!--[if mso]>
+      <style type="text/css">
+        body,
+        table,
+        td,
+        h1,
+        p,
+        a {
+          font-family: sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="left" style="background-color: #F4F8FC;" valign="top" width="100%">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; background-color: transparent; margin: 0;padding: 0;" width="100%">
+						<tbody>
+							<tr>
+								<td align="center" style="margin: 0; padding: 0;" valign="top">
+									<center style="width: 100%; text-align: left; margin: 20px auto; max-width: 600px;">
+										<!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#F4F8FC">
+                    <tr>
+                      <td>
+                  <![endif]-->
+										<div class="email-container" style="max-width: 600px; margin: auto;">
+											<!--[if mso]>
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                            <tr>
+                              <td>
+                          <![endif]-->
+											<table align="center" bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width: 600px; width: 100%;">
+												<tr>
+													<td style="background-color: #ffffff; padding-right: 5px; padding-left: 40px; padding-top: 20px; padding-bottom: 15px; text-align: left; border-bottom-color: #e5e5e5; border-bottom-style: solid; border-bottom-width:1px;color:#000000;"><img alt="Сервис проверки контрагентов" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALsAAAA8CAYAAAA+JcsKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF22lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE4LTExLTIzVDE4OjMzOjIxKzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOC0xMS0yM1QxODozNjozMCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOC0xMS0yM1QxODozNjozMCswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M2UxMjljZGEtN2FkZC04NDQ5LThkM2ItOTY1OGRjN2Y0NTE5IiB4bXBNTTpEb2N1bWVudElE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" style="display: inline; height: 60px; width: 187px;"></td>
+												</tr>
+												<tr>
+													<td>
+														<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" width="100%">
+															<tbody>
+																<tr>
+																	<td style="padding-right: 40px; padding-left: 40px; padding-top: 40px; padding-bottom: 10px; font-family: 'Roboto', Arial, sans-serif; font-size: 18px; line-height: 30px; color: #000000;">
+																		<h1 style="margin: 0 0 0 0; mso-line-height-rule: exactly; font-family: 'Roboto', Arial, sans-serif; font-size: 18px; line-height: 30px; font-weight: 400;color:#000000;">Уважаемый(ая) [ФИО],</h1>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="padding-right: 40px; padding-left: 40px; padding-top: 0; padding-bottom: 20px; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 20px; color: #000000;">Информируем Вас об изменении данных у следующих контрагентов из списка избранное:</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" width="100%">
+															<tbody>
+																<tr>
+																	<td align="left" style="background-color:#4682b4; padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 16px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div style="text-align: left; color: #ffffff; margin-top: 5px; mso-line-height-rule: exactly; line-height: 20px; font-size: 16px; font-family: Roboto, Arial, serif; text-decoration: none;">
+																			<div>
+																				АКЦИОНЕРНОЕ ОБЩЕСТВО 'ГАЗПРОМ ГАЗОРАСПРЕДЕЛЕНИЕ МОСКВА'
+																			</div>
+																			<div>
+																				ИНН: 3455052505 ОГРН: 1163443077621
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="background-color: rgba(204, 204, 204, 0.4); padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 20px; color: #000000;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAkFBMVEUAAAAJqnkIq3gJqnkJqXgApmgJqngJqXgJqngKqngJqnkJqnkHqnkAqHgJqngIqngAqnYJqngJqngJqngIqnkJqnkIq3kJqngJqngIqnkJqnkJqXkGqXkAqXgJqncAqX4JqnkIqXkKq3gIqngJq3gGqngHq3cHq3gJqnkJqXgIqXsJqnkKqXkGqncKqnkJqnjcs9j3AAAALnRSTlMAwECHgAL8j7Pw0a1HCvVeBvnmoXhyZOqnVthrMhE5DbyUTjw1LSQYyZse3rcptm6vFAAABGRJREFUeNrs2Wlz2jAQgOHl8IHxiWPu+4aSzf//d61WyOESbjrNdHfK+yFDiDPjZ7AsS8CrV/+wGn5vHjxOHMQmkQexSARCsAEPkgj5fkkJqcN3VCGRCHkoEQZpWCXCIGCVSINYJeIgNok8iEUiEPJYIhHyUCIS8kgiE/JAIhRyL5EKuZOIhdxK5EJuJIIh1xLJkCuJaMilRDbESJoAwiFG8iYeUkrEQ0qJeEgpEQ8pJeIhpUQ8pJSIhxhJIQZSt9VHVU0MxN4L8oL895Da8wIxkIrqL8jfhrwPCs/3vWLwLhgSJXkHyzp5EomEOEkPL/pQlsSRB5kGFwjFoPZraZDCvXD8yrx2C1GQyMdzrbxIGopRUtqRHEgUoM5fpgAwQdXA4IKZFIgzR6r9DlRKn8gENm2kTo4QiKdHQxfOHWmgqFddPXIaMiArPTimYJqRC1TTFqqmEiDOUB2dmXMtx8hEK10aJo4ASFcPbfgsRNXy8s9d/pAZXTw+XDS/WlWc1C+9iD2kSwNiC59tUM+HI6C2Ln0k7CE0WyxuJhWCZCugDvSRcYekmTp2czupkCTWkg29TplDlvTEDp/lqOrRz2wAKvolZA55U4fmYNr4JIjHffP0a66tN+YQT11Hrr+mG9g6/0CVG4LTRl1tMTqodz3mkBx18XDfQVOiBk/7epWVM4ec8L4mqFIvw4t85hD/jrGfwrldSfngDzmos3SxLFgCZSixgRyYQxr0mN70O4itmjfYwk3RuusNFaTJHDKiFRUATMYOWKJhP2IOWdEty4EnOXR5rZhDnBYdW3lyLYc5BGgK71cfwf2hERJUbcDaGFUJe0hEE/ocrO2FLKxg9HwtO5Ky1AXnBz0nrixnRpPlUMLmA4xdsx10m9kOysYStoPM1eMmcJvZoBvJ2KBTUzfVPsJVR/O+lL3fchM7a+6gbNfMkAoiMRCYzfHccFEkYZgUi6F5Zz6T8rWCM9mO62201K+PtxOHPyRdtjOzeLIX90Pez1ozr4VUJQV7jR1bSFoQ45LyzBIvdjwh2yFSdxgrqLPhCFnGeM7tBLUnBZ2SFYf8IAXqOl6YQkVpuOidzQNukNDVQ7ggRXWzph5P2ZoXZBvr6W8Hv90x0PQjK4g+qf0EvlCkJ80TJ8gAVT8i+FJODVV1PpCU1lKtI3yxCf1f4LCBDCz7CZWtURWygfQrlq8Ve94HLpA0roDaC+nG5TCBLGmkg7XqjUkmkKb+3vCPyun7RCaQxfOTqd6o8JhA+lX3rKoZKGcCmZt76J+O9hMTyM/27RgHQBCIomA0HsMzcP/jWWKhP0YLQOa1W02zgWLD+OHPCQQEBAQEBAQEJI7L8qrSH+RdICAzQPb1Y3snkEeNfqsLAgJyDgQEJAcCApIDAQG5aisf20BAQIaA1AbfWjUQEJAcCAhIbnDIb54oICAgk2ytGggISA4EBCQHAgKSAwEByYGAgORAQEByICAgORAQkBwIyMyQNoGA1EDuIVK7Dpf8hVfBuymyAAAAAElFTkSuQmCC" style="width: 34px; vertical-align: middle;"> Выписка из ЕГР</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div style="color: #949494; text-transform: uppercase;">
+																			полное наименование
+																		</div>
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">АКЦИОНЕРНОЕ ОБЩЕСТВО 'ГАЗПРОМ ГАЗОРАСПРЕДЕЛЕНИЕ МОСКВА'</span>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ 'ГАЗПРОМ ГАЗОРАСПРЕДЕЛЕНИЕ МОСКВА'</span>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div style="color: #949494; text-transform: uppercase;">
+																			список руководителей
+																		</div>
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">Киров Марат Сергеевич</span>
+																						</div>
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">ЗАМЕСТИТЕЛЬ ГЕНЕРАЛЬНОГО ДИРЕКТОРА</span>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">Киров Марат Сергеевич</span>
+																						</div>
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</span>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div>
+																			<span><span style="color: #949494; text-transform: uppercase; font-family: Roboto, Arial, serif;">вид основной деятельности</span></span>
+																		</div>
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr style="padding: 25px 0 0 0;">
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							Код ОКВЭД: <span style="font-weight: 400; color: #000;">69</span>
+																						</div>
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							<span style="font-weight: 400; color: #000;">Деятельность в области права и бухгалтерского учета</span>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							Код ОКВЭД: <span style="font-weight: 400; color: #000;">72.19</span>
+																						</div>
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							<span style="font-weight: 400; color: #000;">Научные исследования и разработки в области естественных и технических наук прочие</span>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" width="100%">
+															<tbody>
+																<tr>
+																	<td style="background-color: rgba(204, 204, 204, 0.4); padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 20px; color: #000000;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAzFBMVEUAAAAArHcArHcArHcAqXIApWwAzrAAu5EArHcArHcArHcArHcArXgArHcArHYArHcArHcAsH0ArHcArHcArHcArHcArHcArHcArXgArHcArHcArHcArHcArHcArHcArHcArHcArHcArHcArHYArHcArHcArHcArXgArnoArHcArHcArHcArHcArHcArHcArHcArHcArHcArHcAr3wArHcAq3UArHcArHcArHcArHcAq3YArXkAqXIAv5gApWwApWwAu5EArHcApWwArHfl/Y5sAAAAQ3RSTlMA5itP/uYrT9UZsTMK2w72MAOp+d7YufwQ7/N2okNTJSjrrUuSOMk+CL6vbSGrlo3hfmYUxJuK5UeHXR76I9/XRc7NYLUI0gAABk5JREFUeNrtnOly2jAURi+kCwTH4JjFmD3sYUmAsATSVe//Tm0nthbgTqkrtVKr8yuZM6PwGV9Jvo4NFovFYrFYLBaLxWKxWCwWi8VisVgsln+BUfDh83uJfD7AOTwJf2X4wRkhKbKNTebl5Y1UXupnorSuX2QM/TKo9V04wV0OiAoy/ZMD9oVIo9yEI7oDoohUE0RqRCKV6zTwTPJEGf4EBOpEKo87oHgbopTNSGEQkl9yX7Zi6itgLCtELmEXXmn6RDXjFlCceyKZ1GudHEqEo5qSxTaFTF7BTCjX4jaVgFCYvDz4zoL7c71JIy2LdqGHTF6jB07kF4cko3dra+5A/Rh8WqW/9qYgFa/mcx94wpkJJzpLSEaBnaNfHK7SwyZIp1kllMqzx4mOKBLhLOgQXfDK8S8LUMDwRpi8cJEM+p08QzcecByACtJPhDFuM9E+EQmYPsblDutO9OXsQQ2rW8Io9XGRiOd4moJxdBb7B1DEaEMYnSsmvCORhC55ZQuP0fxR9EAZkzw/eeEiAe1ohBDi/cI1KKTZQXZeiLicbLyaA4m4B5UMS4RR95joI+LiIBkaROU3gsxRNVToHwSy3ByVcTixEoT+QWD0zK6FsqgwIAg06BR142DChG9kmiExC1z8fpB7UItTJjFPLiLGDvwqq5Mggyul7OqsENLA06PCr+1+ddju/pEG+dP4V8Az4RVJwF8LUhMLvcM7k4KIq/f0hhga5CkAjtGYGBokJRS6NyeGBgnFQl/6pgYRC30YEgVB8ik1FKtcoQPPtEhFZ5u0CdipHAcZp9XQZxuQwQo4gjET/XbSJuDw5k9tUTa0ZV0UC73HlvoCJCZQvWk8bb3nm4jwOaHthdUwxFZ0Jhagf5BWkVvRUaF/ELeMrOiBIPQPgtYzE9sc6B9kSVg940L/IA2u0HGhf5AW26GvMVEH/YPw1+hZRAyyBgSZs617ARf6B5n8/Bq9cgX6B7ms0PUPMi2xeh7h4hTNGnTuGKnngApkRdesQbdm9Yw24xZnm3G6NujyP2vGmXLNflToVd6ZFESs53aRdyYFGQQne3qGQUGQQo8wJ0iIFHqEOUHEQt/lyRl0bdA9os24VomKTuocejXo0GacU/5ZM06vBt2GxGyxQt8W4AyaNeiGedaMQ4TPC213v8+s54YLE4L0WKW7qDAhyJJQbh1UGBDEHfAfGBX6B4FCkfvAASr0DwKFEveBXVToHwRyN/xJhAr9g0CuSCh3Lir0DwK5EqHMAlToH0Qoh5mDCv2DCOUwc1ChfxCxHAJU6B9EOInuXFToH0Q4ie4cVOgf5NJZWP8gUOAOfc9Dhf5B+HKo5lBhQBC+HPaoMCEI5OgFbhMVRgTpx5+32EaFEUHKtKZRYcCsBdCNj3snjQoTgrBHi+eoMGBB5J6lqE5RYUIQ75pEPKDCgL0WwJAuem1UGBGkTI+7hwoTguwq9P9NUGHA9Qj3SPYcFQZcIQJ0w7gQWqgwIcgla4gBzQeARlwIYQsVRgShhbBBhQF9LYCpT17x+6gwIkiDRFRuXVSYEKTFd0owYUKDzrvm+3CCMKxB18L6cC2TG3R4+9c26P5Wg24WoEL/IJfeTtQ/yKW3E/UPIpTDzEWF/kEuPbv0D3Lp2aV/EMgVsSSC0D+IeOgDVOgfRCiH9QgV+gcRDn0XFQYE4cthjQoTgkAuQ4sBFUYEAXoVUkOFEUGGFdrLQoWmjyZh3V5cSAji0xcdKmKHPXbY4ERiDtGMUYFSPhptBAjKbyXOITnpSnR2wnX8nsY2p5XcSmwfiVDGrcRm/Jw5PKTIKxNAUNQGvuNEctb0zZm5UvzjARTQ8OkdQ1wkpx+yuer+zPJqyq1EZ8D90/2evXY3ANkMCS0ERFRjkYDpLYnI9wFWbMszbgCCujVkA4nZZ8SXYi8JpTqoT67k0a352K3EWIS1XbKxa7OMT2IqffjO6okoZ452hysSh891iCrwW4kyGWRVvwEfW9QfiDTE9yUuQ8Go/kLcMZFIcQiMxg1RyAMoDDIWj1J7nieq2LbhiAWRRWoRnKz2ddlR8BfrZyVNlJ2HFpwhu599/fTxrVw+lq/O/an1p98d99PXddcFlNGHd3JZYbuw3xw364HFYrFYLBaLxWKxWCwWi8VisVgsFst/zTcZ6QEHq3MLhgAAAABJRU5ErkJggg==" style="width: 35px; padding-right: 6px; vertical-align: middle;"> Банкротство</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding: 15px 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-size: 16px; text-transform: uppercase; padding-bottom: 8px;">
+																							ДЕЛО О БАНКРОТСТВЕ:
+																						</div>
+																						<div style="font-weight: 400; font-size: 16px; color: #000; font-family: Roboto, Arial, serif; padding-bottom: 12px;">
+																							№ А32-4823/2010-14/93 Б
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0 8px; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-family: Roboto, Arial, serif; padding-bottom: 8px;">
+																							Стадия банкротства:
+																						</div>
+																						<div style="font-weight: 400; font-family: Roboto, Arial, serif;">
+																							Удовлетворение заявлений третьих лиц о намерении погасить обязательства должника
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" width="100%">
+															<tbody>
+																<tr>
+																	<td style="background-color: rgba(204, 204, 204, 0.4); padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 20px; color: #000000;"><img src="data:image/png;base64,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" style="width: 35px; padding-right: 6px; vertical-align: middle;"> Арбитражные дела</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding: 15px 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody>
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-size: 16px; text-transform: uppercase; padding-bottom: 8px;">
+																							Возбуждение производства по делу:
+																						</div>
+																						<div style="font-weight: 400; font-size: 16px; color: #000; font-family: Roboto, Arial, serif; padding-bottom: 12px;">
+																							А32-12106/2016 от 11.04.2016
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0 8px; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-family: Roboto, Arial, serif;">
+																							Роль: <span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">Истец</span>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-family: Roboto, Arial, serif; padding-bottom: 8px;">
+																							Административные (экономические споры по административным правоотношениям)
+																						</div>
+																						<div style="font-family: Roboto, Arial, serif; padding-bottom: 8px;">
+																							Об оспаривании ненорм. прав. актов, реш-ий и действий (бездейств.) гос. органов, органов мест. самоупр., иных органов, долж. лиц
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding: 15px 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td colspan="2" style="color: #949494; padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="color: #949494; font-size: 16px; text-transform: uppercase; padding-bottom: 8px;">
+																							Изменение информации в деле:
+																						</div>
+																						<div style="font-weight: 400; font-size: 16px; color: #000; font-family: Roboto, Arial, serif; padding-bottom: 12px;">
+																							А32-12106/2016 от 11.04.2016
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							Истец:
+																						</div>
+																						<div style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">
+																							<div>
+																								ООО "АПФ "Тихорецкконсервы"
+																							</div><small style="font-weight: 400; font-family: Roboto, Arial, serif;">ИНН 2321011992</small>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							Истец:
+																						</div>
+																						<div style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">
+																							<div>
+																								Ламейкина Лина Николаевна
+																							</div><small style="font-weight: 400; font-family: Roboto, Arial, serif;">ИНН 230800771310</small>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td colspan="2" style="padding: 20px 0 0 0;">
+																						<a href="#" style="color: #369;" target="_blank">Полная информация</a>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" width="100%">
+															<tbody>
+																<tr>
+																	<td align="left" style="background-color:#4682b4; padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 16px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div style="text-align: left; color: #ffffff; margin-top: 5px; mso-line-height-rule: exactly; line-height: 20px; font-size: 16px; font-family: Roboto, Arial, serif; text-decoration: none;">
+																			<div style="text-transform: uppercase;">
+																				ЗАО АГРОФИРМА "СОЛНЕЧНАЯ"
+																			</div><small>ИНН&nbsp;553904513039, ОГРН&nbsp;318554300016779</small>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td style="background-color: rgba(204, 204, 204, 0.4); padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 20px; color: #000000;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAkFBMVEUAAAAJqnkIq3gJqnkJqXgApmgJqngJqXgJqngKqngJqnkJqnkHqnkAqHgJqngIqngAqnYJqngJqngJqngIqnkJqnkIq3kJqngJqngIqnkJqnkJqXkGqXkAqXgJqncAqX4JqnkIqXkKq3gIqngJq3gGqngHq3cHq3gJqnkJqXgIqXsJqnkKqXkGqncKqnkJqnjcs9j3AAAALnRSTlMAwECHgAL8j7Pw0a1HCvVeBvnmoXhyZOqnVthrMhE5DbyUTjw1LSQYyZse3rcptm6vFAAABGRJREFUeNrs2Wlz2jAQgOHl8IHxiWPu+4aSzf//d61WyOESbjrNdHfK+yFDiDPjZ7AsS8CrV/+wGn5vHjxOHMQmkQexSARCsAEPkgj5fkkJqcN3VCGRCHkoEQZpWCXCIGCVSINYJeIgNok8iEUiEPJYIhHyUCIS8kgiE/JAIhRyL5EKuZOIhdxK5EJuJIIh1xLJkCuJaMilRDbESJoAwiFG8iYeUkrEQ0qJeEgpEQ8pJeIhpUQ8pJSIhxhJIQZSt9VHVU0MxN4L8oL895Da8wIxkIrqL8jfhrwPCs/3vWLwLhgSJXkHyzp5EomEOEkPL/pQlsSRB5kGFwjFoPZraZDCvXD8yrx2C1GQyMdzrbxIGopRUtqRHEgUoM5fpgAwQdXA4IKZFIgzR6r9DlRKn8gENm2kTo4QiKdHQxfOHWmgqFddPXIaMiArPTimYJqRC1TTFqqmEiDOUB2dmXMtx8hEK10aJo4ASFcPbfgsRNXy8s9d/pAZXTw+XDS/WlWc1C+9iD2kSwNiC59tUM+HI6C2Ln0k7CE0WyxuJhWCZCugDvSRcYekmTp2czupkCTWkg29TplDlvTEDp/lqOrRz2wAKvolZA55U4fmYNr4JIjHffP0a66tN+YQT11Hrr+mG9g6/0CVG4LTRl1tMTqodz3mkBx18XDfQVOiBk/7epWVM4ec8L4mqFIvw4t85hD/jrGfwrldSfngDzmos3SxLFgCZSixgRyYQxr0mN70O4itmjfYwk3RuusNFaTJHDKiFRUATMYOWKJhP2IOWdEty4EnOXR5rZhDnBYdW3lyLYc5BGgK71cfwf2hERJUbcDaGFUJe0hEE/ocrO2FLKxg9HwtO5Ky1AXnBz0nrixnRpPlUMLmA4xdsx10m9kOysYStoPM1eMmcJvZoBvJ2KBTUzfVPsJVR/O+lL3fchM7a+6gbNfMkAoiMRCYzfHccFEkYZgUi6F5Zz6T8rWCM9mO62201K+PtxOHPyRdtjOzeLIX90Pez1ozr4VUJQV7jR1bSFoQ45LyzBIvdjwh2yFSdxgrqLPhCFnGeM7tBLUnBZ2SFYf8IAXqOl6YQkVpuOidzQNukNDVQ7ggRXWzph5P2ZoXZBvr6W8Hv90x0PQjK4g+qf0EvlCkJ80TJ8gAVT8i+FJODVV1PpCU1lKtI3yxCf1f4LCBDCz7CZWtURWygfQrlq8Ve94HLpA0roDaC+nG5TCBLGmkg7XqjUkmkKb+3vCPyun7RCaQxfOTqd6o8JhA+lX3rKoZKGcCmZt76J+O9hMTyM/27RgHQBCIomA0HsMzcP/jWWKhP0YLQOa1W02zgWLD+OHPCQQEBAQEBAQEJI7L8qrSH+RdICAzQPb1Y3snkEeNfqsLAgJyDgQEJAcCApIDAQG5aisf20BAQIaA1AbfWjUQEJAcCAhIbnDIb54oICAgk2ytGggISA4EBCQHAgKSAwEByYGAgORAQEByICAgORAQkBwIyMyQNoGA1EDuIVK7Dpf8hVfBuymyAAAAAElFTkSuQmCC" style="width: 34px; vertical-align: middle;"> Выписка из ЕГР</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div style="color: #949494; text-transform: uppercase;">
+																			полное наименование
+																		</div>
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">АКЦИОНЕРНОЕ ОБЩЕСТВО 'ГАЗПРОМ ГАЗОРАСПРЕДЕЛЕНИЕ МОСКВА'</span>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ 'ГАЗПРОМ ГАЗОРАСПРЕДЕЛЕНИЕ МОСКВА'</span>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div style="color: #949494; text-transform: uppercase;">
+																			список руководителей
+																		</div>
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">Киров Марат Сергеевич</span>
+																						</div>
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">ЗАМЕСТИТЕЛЬ ГЕНЕРАЛЬНОГО ДИРЕКТОРА</span>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">Киров Марат Сергеевич</span>
+																						</div>
+																						<div style="padding-bottom: 8px;">
+																							<span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">ГЕНЕРАЛЬНЫЙ ДИРЕКТОР</span>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding-top: 15px; padding-bottom: 15px; padding-left: 40px; padding-right: 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<div>
+																			<span><span style="color: #949494; text-transform: uppercase; font-family: Roboto, Arial, serif;">вид основной деятельности</span></span>
+																		</div>
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr style="padding: 25px 0 0 0;">
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							Код ОКВЭД: <span style="font-weight: 400; color: #000;">69</span>
+																						</div>
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							<span style="font-weight: 400; color: #000;">Деятельность в области права и бухгалтерского учета</span>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 12px 0 0; width: 50%;">
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							Код ОКВЭД: <span style="font-weight: 400; color: #000;">72.19</span>
+																						</div>
+																						<div style="padding-bottom: 8px; font-family: Roboto, Arial, serif;">
+																							<span style="font-weight: 400; color: #000;">Научные исследования и разработки в области естественных и технических наук прочие</span>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" width="100%">
+															<tbody>
+																<tr>
+																	<td style="background-color: rgba(204, 204, 204, 0.4); padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 20px; color: #000000;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAzFBMVEUAAAAArHcArHcArHcAqXIApWwAzrAAu5EArHcArHcArHcArHcArXgArHcArHYArHcArHcAsH0ArHcArHcArHcArHcArHcArHcArXgArHcArHcArHcArHcArHcArHcArHcArHcArHcArHcArHYArHcArHcArHcArXgArnoArHcArHcArHcArHcArHcArHcArHcArHcArHcArHcAr3wArHcAq3UArHcArHcArHcArHcAq3YArXkAqXIAv5gApWwApWwAu5EArHcApWwArHfl/Y5sAAAAQ3RSTlMA5itP/uYrT9UZsTMK2w72MAOp+d7YufwQ7/N2okNTJSjrrUuSOMk+CL6vbSGrlo3hfmYUxJuK5UeHXR76I9/XRc7NYLUI0gAABk5JREFUeNrtnOly2jAURi+kCwTH4JjFmD3sYUmAsATSVe//Tm0nthbgTqkrtVKr8yuZM6PwGV9Jvo4NFovFYrFYLBaLxWKxWCwWi8VisVgsln+BUfDh83uJfD7AOTwJf2X4wRkhKbKNTebl5Y1UXupnorSuX2QM/TKo9V04wV0OiAoy/ZMD9oVIo9yEI7oDoohUE0RqRCKV6zTwTPJEGf4EBOpEKo87oHgbopTNSGEQkl9yX7Zi6itgLCtELmEXXmn6RDXjFlCceyKZ1GudHEqEo5qSxTaFTF7BTCjX4jaVgFCYvDz4zoL7c71JIy2LdqGHTF6jB07kF4cko3dra+5A/Rh8WqW/9qYgFa/mcx94wpkJJzpLSEaBnaNfHK7SwyZIp1kllMqzx4mOKBLhLOgQXfDK8S8LUMDwRpi8cJEM+p08QzcecByACtJPhDFuM9E+EQmYPsblDutO9OXsQQ2rW8Io9XGRiOd4moJxdBb7B1DEaEMYnSsmvCORhC55ZQuP0fxR9EAZkzw/eeEiAe1ohBDi/cI1KKTZQXZeiLicbLyaA4m4B5UMS4RR95joI+LiIBkaROU3gsxRNVToHwSy3ByVcTixEoT+QWD0zK6FsqgwIAg06BR142DChG9kmiExC1z8fpB7UItTJjFPLiLGDvwqq5Mggyul7OqsENLA06PCr+1+ddju/pEG+dP4V8Az4RVJwF8LUhMLvcM7k4KIq/f0hhga5CkAjtGYGBokJRS6NyeGBgnFQl/6pgYRC30YEgVB8ik1FKtcoQPPtEhFZ5u0CdipHAcZp9XQZxuQwQo4gjET/XbSJuDw5k9tUTa0ZV0UC73HlvoCJCZQvWk8bb3nm4jwOaHthdUwxFZ0Jhagf5BWkVvRUaF/ELeMrOiBIPQPgtYzE9sc6B9kSVg940L/IA2u0HGhf5AW26GvMVEH/YPw1+hZRAyyBgSZs617ARf6B5n8/Bq9cgX6B7ms0PUPMi2xeh7h4hTNGnTuGKnngApkRdesQbdm9Yw24xZnm3G6NujyP2vGmXLNflToVd6ZFESs53aRdyYFGQQne3qGQUGQQo8wJ0iIFHqEOUHEQt/lyRl0bdA9os24VomKTuocejXo0GacU/5ZM06vBt2GxGyxQt8W4AyaNeiGedaMQ4TPC213v8+s54YLE4L0WKW7qDAhyJJQbh1UGBDEHfAfGBX6B4FCkfvAASr0DwKFEveBXVToHwRyN/xJhAr9g0CuSCh3Lir0DwK5EqHMAlToH0Qoh5mDCv2DCOUwc1ChfxCxHAJU6B9EOInuXFToH0Q4ie4cVOgf5NJZWP8gUOAOfc9Dhf5B+HKo5lBhQBC+HPaoMCEI5OgFbhMVRgTpx5+32EaFEUHKtKZRYcCsBdCNj3snjQoTgrBHi+eoMGBB5J6lqE5RYUIQ75pEPKDCgL0WwJAuem1UGBGkTI+7hwoTguwq9P9NUGHA9Qj3SPYcFQZcIQJ0w7gQWqgwIcgla4gBzQeARlwIYQsVRgShhbBBhQF9LYCpT17x+6gwIkiDRFRuXVSYEKTFd0owYUKDzrvm+3CCMKxB18L6cC2TG3R4+9c26P5Wg24WoEL/IJfeTtQ/yKW3E/UPIpTDzEWF/kEuPbv0D3Lp2aV/EMgVsSSC0D+IeOgDVOgfRCiH9QgV+gcRDn0XFQYE4cthjQoTgkAuQ4sBFUYEAXoVUkOFEUGGFdrLQoWmjyZh3V5cSAji0xcdKmKHPXbY4ERiDtGMUYFSPhptBAjKbyXOITnpSnR2wnX8nsY2p5XcSmwfiVDGrcRm/Jw5PKTIKxNAUNQGvuNEctb0zZm5UvzjARTQ8OkdQ1wkpx+yuer+zPJqyq1EZ8D90/2evXY3ANkMCS0ERFRjkYDpLYnI9wFWbMszbgCCujVkA4nZZ8SXYi8JpTqoT67k0a352K3EWIS1XbKxa7OMT2IqffjO6okoZ452hysSh891iCrwW4kyGWRVvwEfW9QfiDTE9yUuQ8Go/kLcMZFIcQiMxg1RyAMoDDIWj1J7nieq2LbhiAWRRWoRnKz2ddlR8BfrZyVNlJ2HFpwhu599/fTxrVw+lq/O/an1p98d99PXddcFlNGHd3JZYbuw3xw364HFYrFYLBaLxWKxWCwWi8VisVgsFst/zTcZ6QEHq3MLhgAAAABJRU5ErkJggg==" style="width: 35px; padding-right: 6px; vertical-align: middle;"> Банкротство</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding: 15px 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-size: 16px; text-transform: uppercase; padding-bottom: 8px;">
+																							ДЕЛО О БАНКРОТСТВЕ:
+																						</div>
+																						<div style="font-weight: 400; font-size: 16px; color: #000; font-family: Roboto, Arial, serif; padding-bottom: 12px;">
+																							№ А32-4823/2010-14/93 Б
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0 8px; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-family: Roboto, Arial, serif; padding-bottom: 8px;">
+																							Стадия банкротства:
+																						</div>
+																						<div style="font-weight: 400; font-family: Roboto, Arial, serif;">
+																							Удовлетворение заявлений третьих лиц о намерении погасить обязательства должника
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" width="100%">
+															<tbody>
+																<tr>
+																	<td style="background-color: rgba(204, 204, 204, 0.4); padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 20px; color: #000000;"><img src="data:image/png;base64,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" style="width: 35px; padding-right: 6px; vertical-align: middle;"> Арбитражные дела</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding: 15px 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody>
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-size: 16px; text-transform: uppercase; padding-bottom: 8px;">
+																							Возбуждение производства по делу:
+																						</div>
+																						<div style="font-weight: 400; font-size: 16px; color: #000; font-family: Roboto, Arial, serif; padding-bottom: 12px;">
+																							А32-12106/2016 от 11.04.2016
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0 8px; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-family: Roboto, Arial, serif;">
+																							Роль: <span style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">Истец</span>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="font-family: Roboto, Arial, serif; padding-bottom: 8px;">
+																							Административные (экономические споры по административным правоотношениям)
+																						</div>
+																						<div style="font-family: Roboto, Arial, serif; padding-bottom: 8px;">
+																							Об оспаривании ненорм. прав. актов, реш-ий и действий (бездейств.) гос. органов, органов мест. самоупр., иных органов, долж. лиц
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" style="padding: 15px 40px; text-align: left!important; margin: 0; color: #000000; mso-line-height-rule: exactly; line-height: 16px; font-size: 14px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;" valign="top">
+																		<table style="width: 100%; vertical-align: top;">
+																			<tbody style="vertical-align: top;">
+																				<tr>
+																					<td colspan="2" style="color: #949494; padding: 12px 0 0; font-weight: 400; font-family: Roboto, Arial, serif;">
+																						<div style="color: #949494; font-size: 16px; text-transform: uppercase; padding-bottom: 8px;">
+																							Изменение информации в деле:
+																						</div>
+																						<div style="font-weight: 400; font-size: 16px; color: #000; font-family: Roboto, Arial, serif; padding-bottom: 12px;">
+																							А32-12106/2016 от 11.04.2016
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #e84040; font-weight: 400; font-family: Roboto, Arial, serif;">удалено</td>
+																					<td style="color: #949494; padding: 12px 0 8px; border-bottom: 2px solid #4ea31e; font-weight: 400; font-family: Roboto, Arial, serif;">добавлено</td>
+																				</tr>
+																				<tr>
+																					<td style="padding: 12px 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							Истец:
+																						</div>
+																						<div style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">
+																							<div>
+																								ООО "АПФ "Тихорецкконсервы"
+																							</div><small style="font-weight: 400; font-family: Roboto, Arial, serif;">ИНН 2321011992</small>
+																						</div>
+																					</td>
+																					<td style="padding: 12px 0; width: 50%;">
+																						<div style="padding-bottom: 8px;">
+																							Истец:
+																						</div>
+																						<div style="font-weight: 400; color: #000; font-family: Roboto, Arial, serif;">
+																							<div>
+																								Ламейкина Лина Николаевна
+																							</div><small style="font-weight: 400; font-family: Roboto, Arial, serif;">ИНН 230800771310</small>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td colspan="2" style="padding: 20px 0 0 0;">
+																						<a href="#" style="color: #369;" target="_blank">Полная информация</a>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr bgcolor="#FFFFFF">
+													<td style="text-align: left!important; margin: 0; padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 20px; color: #000000; mso-line-height-rule: exactly; line-height: 20px; font-size: 16px; font-family: Roboto, Arial, serif; text-decoration: none; font-weight: 300;">
+														<p>Перейдите по ссылке, чтобы ознакомиться с обновленными данными о контрагентах или изменить параметры рассылки:</p>
+														<table border="0" cellpadding="0" cellspacing="0" style="margin-left: 0!important; margin-right: auto!important;">
+															<tbody>
+																<tr>
+																	<td bgcolor="#4682B4" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;">
+																		<a href="#" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; text-decoration: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 12px 18px; border: 1px solid #4682b4; display: inline-block;" target="_blank">Перейти в сервис</a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr bgcolor="#FFFFFF">
+													<td style="padding-right: 40px; padding-left: 40px; padding-top: 20px; padding-bottom: 20px; text-align: left!important; margin: 0; color: #939090; mso-line-height-rule: exactly; line-height: 22px; font-size: 14px; font-family: 'Roboto', Arial, sans-serif; text-decoration: none; font-weight: 400; border-top: 1px solid #e5e5e5;">
+														<p style="margin:0;">Это письмо сформировано автоматически. Пожалуйста, не&nbsp;отвечайте на&nbsp;него.</p>
+													</td>
+												</tr>
+											</table>
+										</div><!--[if mso | IE]>
+                      </td>
+                    </tr>
+                  </table>
+                  <![endif]-->
+									</center>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

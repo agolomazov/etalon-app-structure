@@ -1,0 +1,187 @@
+body.aside .head-service, body.aside .head-service > div {
+  max-width: initial; }
+  body.aside .head-service.aside-open, body.aside .head-service > div.aside-open {
+    padding-left: 53.2rem;
+    transition: .3s ease; }
+
+body.aside .wrapper.aside-open {
+  padding-left: 50.6rem;
+  transition: .3s ease; }
+
+.head-service > div {
+  max-width: 140rem;
+  margin: auto; }
+
+.user-box {
+  z-index: 999;
+  background: #fff;
+  position: fixed;
+  width: 100%; }
+  .user-box li.dropdown {
+    padding-right: 2.5rem; }
+    .user-box li.dropdown:after {
+      content: '\e908';
+      display: inline-block;
+      font-family: 'uicons';
+      font-size: 1.4rem;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -1rem; }
+
+.client-avatar {
+  display: inline-block;
+  padding: 1rem;
+  background: #f2f4f7;
+  border-radius: 50%; }
+
+.logo {
+  display: inline-block;
+  width: 14rem;
+  height: 3.4rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: url(../../images/sb/logo-green.png) no-repeat 0 50%;
+  padding-left: 3.2rem; }
+
+.button.shadow {
+  box-shadow: 0 0 1.6rem rgba(31, 31, 34, 0.1);
+  border-color: #e4e8eb; }
+
+.sidebar ul > li > a {
+  position: relative;
+  padding: 1.2rem .6rem 1.2rem 6rem; }
+  .sidebar ul > li > a > .count {
+    position: absolute;
+    padding: .2rem 0.4rem .1rem;
+    right: 1rem;
+    top: 50%;
+    margin-top: -1rem; }
+    .sidebar ul > li > a > .count:empty {
+      right: 2rem;
+      transform: none;
+      min-width: 0.8rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: #ff890c;
+      border-radius: 50%;
+      margin-top: -.4rem; }
+
+.sidebar ul li {
+  padding: 0;
+  white-space: normal; }
+  .sidebar ul li.active {
+    font-weight: 500; }
+    .sidebar ul li.active::after {
+      height: 77%;
+      top: 10%; }
+
+.sidebar nav {
+  padding-top: 8rem;
+  height: calc(100% - 8rem); }
+
+.sidebar .main-aside {
+  width: 25rem;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 0 1.6rem rgba(31, 31, 34, 0.1); }
+
+.sidebar .sub-aside {
+  width: 25rem;
+  padding-left: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: #fbfbfd;
+  z-index: 90; }
+  .sidebar .sub-aside ul {
+    margin-left: -1rem; }
+  .sidebar .sub-aside ul li a {
+    padding: 1rem 3rem 1rem 2rem;
+    color: #7d838a; }
+
+.sidebar.open {
+  width: 51rem; }
+  .sidebar.open .sub-aside {
+    left: 25rem;
+    opacity: 1;
+    transition: .3s ease; }
+
+.head-service {
+  padding-bottom: 0;
+  padding-top: 10rem; }
+  .head-service.title {
+    margin-bottom: 0; }
+
+.icon-big {
+  font-size: 3rem; }
+
+.txt-lightgray {
+  color: #b2b8bf; }
+
+.wizard-window {
+  border-radius: 2.4rem 2.4rem 0 0; }
+  .wizard-window .wizard-content {
+    background: #107f8c; }
+  .wizard-window .chunkbar {
+    display: flex; }
+    .wizard-window .chunkbar .bar {
+      display: inline-flex;
+      background: #94f1da;
+      height: .6rem;
+      border-radius: .6rem;
+      border: 0 !important;
+      width: 96%;
+      margin-right: 1rem; }
+      .wizard-window .chunkbar .bar:last-child {
+        margin-right: 0; }
+      .wizard-window .chunkbar .bar.success {
+        background: #fff; }
+  .wizard-window .inner.first {
+    padding-left: 9.6rem; }
+  .wizard-window .list-check > li {
+    padding-bottom: 1.2rem; }
+    .wizard-window .list-check > li:before {
+      color: #fff; }
+
+.k-window-titleless .k-window-actions {
+  display: none; }
+
+.back-link {
+  position: relative;
+  margin-left: -4rem;
+  margin-top: .5rem; }
+
+.panel.doc .title {
+  padding: 1.6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .panel.doc .title .inner.first {
+    padding-left: 4rem; }
+    .panel.doc .title .inner.first .i-label {
+      left: 0; }
+
+.panel.doc .content-cell {
+  padding: 1.6rem 2rem; }
+
+.panel.doc dl label {
+  color: #949494; }
+
+.invoice-grid th {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding: 1.2rem .4rem; }
+
+.invoice-grid td {
+  padding: .8rem .4rem; }
+
+.invoice-grid .button.more {
+  padding: .5rem; }
+
+.invoice-grid tfoot td {
+  padding: .3rem .4rem;
+  border-bottom: 1px solid #d0d7dd; }
+
+/*# sourceMappingURL=newcourier.css.map */

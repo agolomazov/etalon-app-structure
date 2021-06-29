@@ -1,0 +1,171 @@
+body {
+  font-size: 1.6rem;
+  line-height: 2.4rem; }
+
+.wrapper {
+  max-width: 120rem; }
+
+h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  text-transform: none; }
+
+h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+  text-transform: none; }
+
+h3 {
+  font-size: 3rem;
+  line-height: 4rem;
+  text-transform: none; }
+
+h4 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  text-transform: none; }
+
+h5, h6 {
+  text-transform: uppercase; }
+
+.hidden {
+  visibility: hidden; }
+
+/* Header
+----------------------------------------------------------------------------- Header */
+.header-box {
+  color: #3f5666;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: 1px solid #e5e5e5; }
+
+/* Nav
+----------------------------------------------------------------------------- Nav */
+.menu-h.main .level-1 {
+  margin-left: 2rem; }
+
+.logo {
+  margin-right: 2rem; }
+  .logo svg.icon {
+    vertical-align: top;
+    width: 5rem;
+    height: 5rem;
+    margin: -1rem 0 0; }
+
+.personal .level-1 {
+  min-width: 4rem;
+  text-align: center;
+  border-radius: 2rem; }
+
+.personal li.active {
+  color: #fff;
+  background-color: #3f5666; }
+
+/* Content
+----------------------------------------------------------------------------- Content */
+.content-box {
+  padding-top: 7rem; }
+
+@keyframes shimmer {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    opacity: 0; }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%, 100% {
+    opacity: 1; } }
+
+.bubble {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  border-radius: .5rem;
+  min-width: 30%;
+  position: relative;
+  border: 1px solid rgba(255, 220, 88, 0.5);
+  box-shadow: 0 0 1.6rem rgba(255, 220, 88, 0.5);
+  transition: all .3s;
+  z-index: 1;
+  transform: scale(1) rotate(0deg);
+  animation: shimmer .45s forwards;
+  margin: 2rem;
+  padding: 1rem 0; }
+  .bubble:hover {
+    color: #ffdc58;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 transparent;
+    border-color: rgba(255, 220, 88, 0.9); }
+    .bubble:hover:after {
+      border-color: rgba(255, 220, 88, 0.9);
+      left: 5rem;
+      top: 5rem;
+      right: 5rem;
+      bottom: 5rem;
+      opacity: 0; }
+  .bubble:after {
+    content: '';
+    border: 1px solid rgba(255, 220, 88, 0.3);
+    border-radius: 1rem;
+    position: absolute;
+    opacity: 1;
+    left: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    top: -1rem;
+    z-index: -1;
+    transition: all .5s; }
+
+.full {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  position: relative;
+  padding: 2rem 0; }
+  .full.intro {
+    color: #fff;
+    background-image: url("https://cdn.esphere.ru/images/rat/intro-bg.jpg"); }
+    .full.intro .txt-large {
+      font-size: 7rem;
+      line-height: 1; }
+  .full.region {
+    background-image: url("https://cdn.esphere.ru/images/rat/russia-dotted.svg");
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; }
+
+.list-col li:hover {
+  background: rgba(0, 0, 0, 0.05);
+  cursor: pointer; }
+
+.list-col .col {
+  width: 7rem;
+  margin-right: 1rem;
+  cursor: pointer; }
+
+.k-pager-numbers .k-link,
+.k-pager-numbers .k-link:link {
+  color: inherit; }
+
+@media (min-width: 768px) {
+  .list-col {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2; } }
+
+@media (min-width: 1000px) {
+  .list-col {
+    font-size: 2rem;
+    line-height: 4rem; } }
+
+@media (max-width: 1000px) {
+  .bubble {
+    min-width: 40%; } }
+
+@media (max-width: 650px) {
+  .bubble {
+    display: block; } }
+
+/*# sourceMappingURL=rat.css.map */

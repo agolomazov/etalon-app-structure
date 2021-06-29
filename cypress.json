@@ -1,0 +1,9 @@
+{
+  "defaultCommandTimeout": 8000,
+  "requestTimeout": 8000,
+  "testFiles": "**/*.spec.*",
+  "ignoreTestFiles": "**/examples/*",
+  "env": {
+    "largeFileUploadTimeout": 40000
+  }
+}

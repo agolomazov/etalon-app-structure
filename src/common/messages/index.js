@@ -1,0 +1,1 @@
+export { getUiMessages } from './messages';

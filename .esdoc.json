@@ -1,0 +1,102 @@
+{
+  "source": "./src",
+  "destination": "./esdoc",
+  "includes": [
+    "\\.jsx?$"
+  ],
+  "excludes": [
+    "ducks.js",
+    "index.js"
+  ],
+  "plugins": [
+    {
+      "name": "esdoc-publish-html-plugin",
+      "option": {
+        "template": "./esdoc-template"
+      }
+    },
+    {
+      "name": "esdoc-inject-style-plugin",
+      "option": {
+        "enable": true,
+        "styles": [
+          "./esdoc-template/custom-styles.css"
+        ]
+      }
+    },
+    {
+      "name": "esdoc-standard-plugin"
+    },
+    {
+      "name": "esdoc-coverage-plugin",
+      "option": {
+        "enable": true,
+        "kind": [
+          "class",
+          "method",
+          "member",
+          "get",
+          "set",
+          "constructor",
+          "function",
+          "variable"
+        ]
+      }
+    },
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "all": true
+      }
+    },
+    {
+      "name": "esdoc-external-ecmascript-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "esdoc-brand-plugin",
+      "option": {
+        "logo": "./esdoc-template/logo.png",
+        "title": "ЛК Арендатора",
+        "repository": "https://atlas.swec.sbercloud.ru/bitbucket/projects/ARLK/repos/arlk-tenant-ui/browse",
+        "site": "",
+        "author": ""
+      }
+    },
+    {
+      "name": "esdoc-jsx-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "esdoc-react-plugin"
+    },
+    {
+      "name": "esdoc-type-inference-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "esdoc-undocumented-identifier-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "esdoc-unexported-identifier-plugin",
+      "option": {
+        "enable": true
+      }
+    },
+    {
+      "name": "esdoc-lint-plugin",
+      "option": {
+        "enable": true
+      }
+    }
+  ]
+}

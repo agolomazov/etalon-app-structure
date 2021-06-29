@@ -1,0 +1,296 @@
+@import "../variables/_base.scss";
+@import "../variables/themes/_nova.scss";
+@import "scanner.scss";
+
+.advice {
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .no-read {
+    td {
+      font-weight: 500;
+      &:first-child {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          left: -1rem;
+          top: 0;
+          bottom: -1px;
+          border-left: .2rem solid $accent-02;
+        }
+      }
+    }
+  }
+
+  .block-fly {
+    box-shadow: 0 1.6rem 2.4rem rgba($black-01, .1), 0 0 .8rem rgba($black-01, .03);
+    border-radius: 1.2rem;
+    background-color: $white;
+    margin-top: 1.7rem;
+    padding: 1rem 1rem 2.4rem;
+    &.k-grid {
+      padding-top: .4rem;
+    }
+    &.inner {
+      padding: 1rem;
+    }
+    tr.danger {
+      background-color: $error-05;
+    }
+    &.danger {
+      background-color: $error-05;
+      .novicon-thumbs-up {
+        color: $black-04;
+      }
+    }
+    .button-group .button.active {
+      background-color: $black-06;
+    }
+    .markers .inner:hover {
+      background-color: $white;
+      cursor: default;
+    }
+    .dropdown {
+      cursor: pointer;
+    }
+  }
+
+  .search {
+    &-success {
+      border-color: $primary-02;
+      .novicon-search {
+        color: $primary-02 !important;
+      }
+    }
+    .k-autocomplete {
+      border: 0;
+    }
+    .k-input {
+      padding: 1px 0;
+    }
+    .k-space-left {
+      padding-left: 1.4rem;
+    }
+    .k-icon {
+      margin-top: -1rem;
+    }
+    .k-i-close {
+      margin-top: -1rem;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  .k-slider-horizontal {
+    .k-tick {
+      background: none;
+    }
+    .k-label {
+      bottom: -.7em;
+    }
+    .k-first .k-label {
+      left: -40%;
+    }
+    .k-last .k-label {
+      right: -30%;
+    }
+  }
+
+  .k-tabstrip > .k-tabstrip-items {
+    background-color: transparent;
+    .k-item {
+      .k-link {
+        padding: .8rem;
+      }
+      margin-right: 2rem;
+    }
+  }
+
+  .k-slider-horizontal {
+    width: 100% !important;
+  }
+
+  .k-slider-tooltip {
+    background-color: $white;
+    box-shadow: none;
+    color: $primary-02;
+    border: 1px solid $black-05;
+  }
+
+  .k-tabstrip > .k-content {
+    overflow: initial;
+  }
+
+  .w-10[class*="list"] > dt {width:  9%;}
+  .w-15[class*="list"] > dt {width: 14%;}
+  .w-20[class*="list"] > dt {width: 19%;}
+}
+
+.advice-wrap {
+  border: 1px solid $gray;
+  border-radius: .6rem;
+  padding-bottom: 4rem;
+
+  .content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .promo {
+    background: $black-06 url("https://cdn.esphere.ru/images/advice/credit-intro.png") no-repeat 81% bottom;
+    min-height: 33rem;
+    &.content {
+      .inner {
+        padding-right: 45%;
+      }
+    }
+  }
+}
+
+/* sub-menu
+----------------------------------------------------------------------------- */
+
+.header .menu-h {
+  background: $black-06;
+  border-radius: $btn-big-radius;
+  padding: 2px;
+  li.level-1 {
+    margin-bottom: 0;
+    border-radius: $btn-big-radius;
+    transition:all .1s linear;
+    > a, > span, > div {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      text-align: center;
+    }
+    &.active {
+      background: $black-03;
+      color: $text-reverse;
+    }
+    &:last-child a.i-count {
+      padding-right: .6rem;
+    }
+    &:hover:not(.active) {
+      background: $black-05;
+    }
+  }
+  .i-sup {
+    overflow: visible;
+    .count.sup {
+      top: -1rem;
+    }
+  }
+}
+
+.header .menu-h li.dropdown {
+  &.active {
+    background: transparent;
+    color: $black-05;
+  }
+}
+
+.dropdown > ul {
+  opacity: 0;
+  transition: .3s;
+  min-width: 25rem;
+  left: 0;
+  box-shadow: $shadow;
+  .triangle-marker {
+    position: absolute;
+  }
+  &.pos-bottom {
+    top: 8rem;
+    margin-top: 2rem;
+    .triangle-marker {
+      top: -.5rem;
+      right: 7.1rem;
+      transform: rotate(180deg);
+    }
+  }
+  &.pos-top {
+    top: auto;
+    bottom: calc( 100% + 5rem );
+    .triangle-marker {
+      bottom: -.5rem;
+      right: 7rem;
+    }
+  }
+}
+
+.dropdown:hover > ul {
+  animation-duration: .4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  &.pos-bottom {
+    animation-name: tooltip-bootom;
+  }
+  &.pos-top {
+    animation-name: tooltip-top;
+  }
+}
+
+@keyframes tooltip-bootom {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+@keyframes tooltip-top {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 100%;
+  }
+}
+
+/* layout
+----------------------------------------------------------------------------- */
+
+.shadow {
+  box-shadow: $shadow;
+}
+
+.block-pos-r-b {
+  position: absolute;
+  right: -1.5rem;
+  bottom: 1.5rem;
+  z-index: 10;
+}
+
+/* icon
+----------------------------------------------------------------------------- */
+
+.icon-2rem, .icon-2-rem {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-3rem, .icon-3-rem {
+  width: 3rem;
+  height: 3rem;
+}
+
+.i-rating {
+  height: 2rem;
+  width: 2rem;
+  background-image: url("https://cdn.esphere.ru/images/advice/thumbs-down.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  transform: rotate(180deg);
+
+  > div:after {
+    content: "";
+    display: block;
+    height: 100%;
+    background-image: url("https://cdn.esphere.ru/images/advice/thumbs-down-full.png");
+  }
+}
